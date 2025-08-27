@@ -1,0 +1,14 @@
+# editors + OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# deploy/vendor
+.vercel/
+dist/
+out/
+
+# secrets
+.env
+.env.*
