@@ -61,6 +61,11 @@ body{
   display:none; position:absolute; top:calc(100% + 8px); left:0; min-width:180px;
   background:var(--panel); border:1px solid var(--line); border-radius:10px;
   box-shadow:var(--shadow-soft); padding:.35rem; z-index:50;
+
+  /* NEW: prevent "hover flicker" */
+  transition:opacity .15s ease-in-out, visibility .15s ease-in-out;
+  opacity:0;
+  visibility:hidden;
 }
 .has-sub:hover .submenu,
 .has-sub:focus-within .submenu{ display:block }
