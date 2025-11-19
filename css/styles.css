@@ -41,7 +41,7 @@ body{
 .site-header{
   position:sticky; top:0; z-index:20;
   backdrop-filter: blur(6px);
-  background: rgba(15,17,21,.7);
+  background: #303030;
   border-bottom:1px solid var(--line);
 }
 .nav{
@@ -52,7 +52,7 @@ body{
   display:flex; align-items:center; gap:.6rem; font-weight:650;
   text-decoration:none; color:var(--ink);
 }
-.brand img{ height:48px; width:auto; border-radius:6px }
+.brand img{ height:96px; width:auto; border-radius:6px }
 .spacer{ flex:1 }
 .nav a{
   color:var(--ink-dim); text-decoration:none; padding:.4rem .6rem; border-radius:8px;
@@ -150,9 +150,9 @@ body{
   padding:1rem 1.1rem;
   box-shadow: var(--shadow-soft);
 }
-.tile h3{ margin:.1rem 0 .4rem; font-size: 18px; color: #ffffff; }
-.tile p{ color: #ffffff; margin:0 0 .35rem }
-.tile ul{ margin:.5rem 0 0 1rem; color: #ffffff; }
+.tile h3{ margin:.1rem 0 .4rem; font-size: 18px; color: #000000; }
+.tile p{ color: #000000; margin:0 0 .35rem }
+.tile ul{ margin:.5rem 0 0 1rem; color: #000000; }
 .tile li+li{ margin-top:.25rem }
 
 /* --- "Selected projects" grid --- */
