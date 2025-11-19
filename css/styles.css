@@ -1,14 +1,14 @@
 /* ===== Doppler/Edward — FAA-ish dark theme ===== */
 
 :root{
-  --bg: #0f1115;
-  --bg-elev: #12151b;
-  --panel: #171a21;
-  --panel-2: #1b1f27;
-  --ink: #e7ebf1;
-  --ink-dim: #aab2c2;
+  --bg: #303030;
+  --bg-elev: #303030;
+  --panel: #303030;
+  --panel-2: #303030;
+  --ink: #ffffff;
+  --ink-dim: #ffffff;
   --muted: #7b8496;
-  --line: #242a33;
+  --line: #404040;
 
   --accent: #d77b1e;     /* Doppler orange */
   --accent-2: #f8a24e;
@@ -52,7 +52,7 @@ body{
   display:flex; align-items:center; gap:.6rem; font-weight:650;
   text-decoration:none; color:var(--ink);
 }
-.brand img{ width:22px; height:22px; border-radius:4px }
+.brand img{ height:48px; width:auto; border-radius:6px }
 .spacer{ flex:1 }
 .nav a{
   color:var(--ink-dim); text-decoration:none; padding:.4rem .6rem; border-radius:8px;
@@ -143,28 +143,29 @@ body{
 .section{ margin: 2.25rem 0 }
 .tiles{ display:grid; grid-template-columns: repeat(3, 1fr); gap:1rem; }
 .tile{
-  background: linear-gradient(180deg, var(--panel-2), var(--panel));
-  border:1px solid var(--line);
+  background: #f4ebd0;
+  border:1px solid #e0d4b8;
   border-left: 4px solid var(--accent);
   border-radius: var(--radius);
   padding:1rem 1.1rem;
   box-shadow: var(--shadow-soft);
 }
-.tile h3{ margin:.1rem 0 .4rem; font-size: 18px }
-.tile p{ color:var(--ink-dim); margin:0 0 .35rem }
-.tile ul{ margin:.5rem 0 0 1rem; color:var(--ink-dim) }
+.tile h3{ margin:.1rem 0 .4rem; font-size: 18px; color: #ffffff; }
+.tile p{ color: #ffffff; margin:0 0 .35rem }
+.tile ul{ margin:.5rem 0 0 1rem; color: #ffffff; }
 .tile li+li{ margin-top:.25rem }
 
-/* --- “Selected projects” grid --- */
+/* --- "Selected projects" grid --- */
 .cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
 .card{
-  background: var(--panel);
+  background: #303030;
   border:1px solid var(--line);
   border-radius: var(--radius);
   padding:1rem 1.1rem;
   box-shadow: var(--shadow-soft);
 }
-.card h4{ margin:.1rem 0 .25rem; font-size:16px }
+.card h4{ margin:.1rem 0 .25rem; font-size:16px; color: #ffffff; }
+.card p{ color: #ffffff; }
 .card .meta{ color:var(--muted); font: 12px/1.3 var(--mono); letter-spacing:.2px }
 
 /* --- about page --- */
