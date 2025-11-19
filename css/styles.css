@@ -52,7 +52,20 @@ body{
   display:flex; align-items:center; gap:.6rem; font-weight:650;
   text-decoration:none; color:var(--ink);
 }
-.brand img{ height:96px; width:auto; border-radius:6px }
+.brand img{
+  height:96px; width:auto; border-radius:6px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+.brand img:hover{
+  border-color: var(--accent);
+  box-shadow:
+    inset 3px 3px 8px rgba(215, 123, 30, 0.4),
+    inset -3px -3px 8px rgba(0, 150, 255, 0.3),
+    0 0 20px rgba(215, 123, 30, 0.6),
+    0 0 40px rgba(215, 123, 30, 0.4);
+  transform: translateY(-2px);
+}
 .spacer{ flex:1 }
 .nav a{
   color:var(--ink-dim); text-decoration:none; padding:.4rem .6rem; border-radius:8px;
@@ -113,6 +126,18 @@ body{
   background: var(--panel);
   box-shadow: var(--shadow);
   border:1px solid var(--line);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.hero-img:hover{
+  border-color: var(--accent);
+  box-shadow:
+    inset 3px 3px 8px rgba(215, 123, 30, 0.4),
+    inset -3px -3px 8px rgba(0, 150, 255, 0.3),
+    0 0 20px rgba(215, 123, 30, 0.6),
+    0 0 40px rgba(215, 123, 30, 0.4),
+    0 8px 24px rgba(0,0,0,.5);
+  transform: translateY(-2px);
 }
 .hero-img img{ width:100%; display:block; transform: translateZ(0); }
 .crt:before{
@@ -149,6 +174,17 @@ body{
   border-radius: var(--radius);
   padding:1rem 1.1rem;
   box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.tile:hover{
+  border-color: var(--accent);
+  box-shadow:
+    inset 3px 3px 8px rgba(215, 123, 30, 0.4),
+    inset -3px -3px 8px rgba(0, 150, 255, 0.3),
+    0 0 20px rgba(215, 123, 30, 0.6),
+    0 0 40px rgba(215, 123, 30, 0.4);
+  transform: translateY(-2px);
 }
 .tile h3{ margin:.1rem 0 .4rem; font-size: 18px; color: #000000; }
 .tile p{ color: #000000; margin:0 0 .35rem }
@@ -163,6 +199,17 @@ body{
   border-radius: var(--radius);
   padding:1rem 1.1rem;
   box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card:hover{
+  border-color: var(--accent);
+  box-shadow:
+    inset 3px 3px 8px rgba(215, 123, 30, 0.4),
+    inset -3px -3px 8px rgba(0, 150, 255, 0.3),
+    0 0 20px rgba(215, 123, 30, 0.6),
+    0 0 40px rgba(215, 123, 30, 0.4);
+  transform: translateY(-2px);
 }
 .card h4{ margin:.1rem 0 .25rem; font-size:16px; color: #ffffff; }
 .card p{ color: #ffffff; }
@@ -191,6 +238,17 @@ body{
   border-left:4px solid var(--accent);
   border-radius: var(--radius);
   padding:1rem; margin:.75rem 0; box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.box:hover{
+  border-color: var(--accent);
+  box-shadow:
+    inset 3px 3px 8px rgba(215, 123, 30, 0.4),
+    inset -3px -3px 8px rgba(0, 150, 255, 0.3),
+    0 0 20px rgba(215, 123, 30, 0.6),
+    0 0 40px rgba(215, 123, 30, 0.4);
+  transform: translateY(-2px);
 }
 
 /* --- advocacy overlay (image hover) --- */
