@@ -9,16 +9,29 @@
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="/">
-    <img src="assets/img/social-card (50 x 50 cm).png" alt="Doppler/Edward">
-  </a>
-  <nav class="nav">
-    <a href="/work.html">Work</a>
-    <a href="/about.html">About</a>
-    <a href="/advocacy.html">Advocacy</a>
-    <a class="active" href="/rgm.html">RGM</a>
-    <a class="cta" href="/contact.html">Email us</a>
-  </nav>
+  <div class="nav">
+    <a class="brand" href="/">
+      <img src="assets/img/header_logo_banner.png" alt="Doppler/Edward">
+    </a>
+    <div class="hamburger" onclick="document.querySelector('.links').classList.toggle('mobile-open')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="links">
+      <a href="/work.html">Work</a>
+      <div class="has-sub">
+        <a href="/about.html" class="parent">About ▾</a>
+        <div class="submenu">
+          <a href="/about.html">About</a>
+          <!-- <a href="/team.html">Our Team</a> -->
+        </div>
+      </div>
+      <a href="/advocacy.html">Advocacy</a>
+      <a aria-current="page" href="/rgm.html">RGM</a>
+      <a class="cta" href="mailto:joshua@doppleredward.com">Email us</a>
+    </nav>
+  </div>
 </header>
 
 <section class="page-hero">
