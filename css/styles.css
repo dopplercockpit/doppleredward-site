@@ -348,6 +348,473 @@ body{
   color:#e7ebf1; letter-spacing:.25px;
 }
 
+/* ===== RGM PAGE: INDUSTRIAL HIGH-TECH / EXECUTIVE TERMINAL ===== */
+
+/* Override background for RGM page with gunmetal grey */
+body:has(.rgm-hero) {
+  background: radial-gradient(1000px 700px at 10% -10%, rgba(215,123,30,.06), transparent 40%),
+              radial-gradient(1000px 700px at 90% -10%, rgba(215,123,30,.03), transparent 40%),
+              #1A1A1A;
+}
+
+.rgm-hero {
+  text-align: center;
+  border-bottom: 1px solid rgba(215, 123, 30, 0.3);
+}
+
+.rgm-hero h1 {
+  margin-bottom: 0.5rem;
+  font-family: var(--sans);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: rgba(215, 123, 30, 0.8);
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.rgm-wrap {
+  max-width: 1200px;
+}
+
+.rgm-content {
+  padding: 0 2rem;
+  line-height: 1.7;
+}
+
+/* Section Headers with Coordinates */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0 1.5rem;
+}
+
+.section-header .coord {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: rgba(215, 123, 30, 0.6);
+  letter-spacing: 1px;
+}
+
+.section-header h2 {
+  font-family: var(--sans);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Manifesto (Lead Paragraph) */
+.manifesto {
+  font-size: 1.35em;
+  line-height: 1.6;
+  color: #e7ebf1;
+  margin: 1.5rem 0;
+  font-weight: 400;
+}
+
+/* Capability Grid */
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.capability-card {
+  background: rgba(30, 30, 30, 0.6);
+  border: 1px solid rgba(215, 123, 30, 0.3);
+  border-left: 3px solid rgba(215, 123, 30, 0.8);
+  padding: 1rem 1.2rem;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d0d6e0;
+  transition: all 0.3s ease;
+}
+
+.capability-card:hover {
+  background: rgba(30, 30, 30, 0.9);
+  border-color: rgba(215, 123, 30, 0.7);
+  transform: translateX(4px);
+}
+
+/* Key Question/Answer */
+.key-question {
+  font-family: var(--mono);
+  font-size: 15px;
+  color: rgba(215, 123, 30, 1);
+  margin: 2rem 0 0.5rem;
+  font-weight: 600;
+}
+
+.key-answer {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+/* Tactical Divider with Crosshairs */
+.tactical-divider {
+  display: flex;
+  align-items: center;
+  margin: 3rem 0;
+  gap: 1rem;
+}
+
+.tactical-divider .line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(215, 123, 30, 0.4) 20%,
+    rgba(215, 123, 30, 0.4) 80%,
+    transparent
+  );
+}
+
+.tactical-divider .crosshair {
+  font-family: var(--mono);
+  font-size: 14px;
+  color: rgba(215, 123, 30, 0.6);
+  font-weight: 700;
+}
+
+/* RGM Cycle Grid (2x2) */
+.rgm-cycle-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.cycle-card {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(215, 123, 30, 0.25);
+  border-radius: 8px;
+  padding: 1.5rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.cycle-card:hover {
+  background: rgba(25, 25, 25, 0.95);
+  border-color: rgba(215, 123, 30, 0.6);
+  box-shadow: 0 0 20px rgba(215, 123, 30, 0.15);
+}
+
+.cycle-number {
+  font-family: var(--mono);
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(215, 123, 30, 0.4);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.cycle-card h3 {
+  font-family: var(--mono);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+}
+
+.cycle-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #b8c0d0;
+  margin: 0;
+}
+
+/* Connectors between cycle cards */
+.connector {
+  position: absolute;
+  background: rgba(215, 123, 30, 0.3);
+}
+
+.connector-right {
+  width: 20px;
+  height: 2px;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.connector-down {
+  width: 2px;
+  height: 20px;
+  bottom: -20px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.connector-left {
+  width: 20px;
+  height: 2px;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.connector-up {
+  width: 2px;
+  height: 20px;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cycle-conclusion {
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+/* AI Focus Section */
+.focus-intro {
+  font-weight: 600;
+  color: #ffffff;
+  margin: 1.5rem 0 1rem;
+}
+
+.ai-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.ai-card {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(215, 123, 30, 0.25);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.ai-card:hover {
+  background: rgba(25, 25, 25, 0.95);
+  border-color: rgba(215, 123, 30, 0.6);
+}
+
+.ai-card h3 {
+  font-family: var(--mono);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(215, 123, 30, 1);
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+}
+
+.ai-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #d0d6e0;
+  margin: 0.5rem 0;
+}
+
+/* Terminal Query (Code Block) */
+.terminal-query {
+  background: #0d0d0d;
+  border: 1px solid rgba(215, 123, 30, 0.4);
+  border-left: 3px solid rgba(215, 123, 30, 0.8);
+  padding: 1rem 1.2rem;
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.5;
+  color: #00ff88;
+  margin: 1rem 0;
+  border-radius: 4px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.terminal-query .prompt {
+  color: rgba(215, 123, 30, 1);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+/* Goal Checklist */
+.goal-intro {
+  font-weight: 600;
+  color: #ffffff;
+  margin: 2rem 0 1rem;
+}
+
+.goal-checklist {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 2rem;
+}
+
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: rgba(20, 20, 20, 0.6);
+  border: 1px solid rgba(215, 123, 30, 0.2);
+  border-radius: 4px;
+  font-size: 14px;
+  color: #d0d6e0;
+}
+
+.check-item .check {
+  color: rgba(215, 123, 30, 1);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Due Diligence Section */
+.dd-emphasis {
+  font-size: 1.15em;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 1.5rem 0;
+}
+
+.dd-checklist {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.dd-item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(215, 123, 30, 0.25);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.dd-item.alert {
+  border-color: rgba(215, 123, 30, 0.6);
+  border-left: 3px solid rgba(215, 123, 30, 0.9);
+  box-shadow: 0 0 15px rgba(215, 123, 30, 0.1);
+}
+
+.dd-item:hover {
+  background: rgba(25, 25, 25, 0.95);
+  border-color: rgba(215, 123, 30, 0.5);
+}
+
+.dd-bracket {
+  font-family: var(--mono);
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(215, 123, 30, 0.8);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 0.25rem;
+}
+
+.dd-content h3 {
+  font-family: var(--mono);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin: 0 0 0.5rem;
+  font-weight: 600;
+}
+
+.dd-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #b8c0d0;
+  margin: 0;
+}
+
+/* PE Roles Grid */
+.pe-intro {
+  font-weight: 600;
+  color: #ffffff;
+  margin: 2rem 0 1rem;
+}
+
+.pe-role-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0 3rem;
+}
+
+.pe-role {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(215, 123, 30, 0.3);
+  border-left: 3px solid rgba(215, 123, 30, 0.8);
+  padding: 1.2rem;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d0d6e0;
+  transition: all 0.3s ease;
+}
+
+.pe-role:hover {
+  background: rgba(30, 30, 30, 0.9);
+  border-color: rgba(215, 123, 30, 0.7);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(215, 123, 30, 0.15);
+}
+
+/* Footer glow effect for RGM page */
+body:has(.rgm-hero) .footer-ansi {
+  text-shadow: 0 0 10px rgba(215, 123, 30, 0.4);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .rgm-content {
+    padding: 0 1rem;
+  }
+
+  .manifesto {
+    font-size: 1.15em;
+  }
+
+  .capability-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rgm-cycle-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .connector {
+    display: none;
+  }
+
+  .ai-focus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pe-role-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
 /* --- team page --- */
 .team-hero{
   display:grid; grid-template-columns: minmax(280px, 520px) 1fr;
