@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Redline  Doppler/Edward</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="assets/favicon/favicon.ico">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="redline-page">
+<header class="site-header">
+  <div class="nav">
+    <a class="brand" href="/">
+      <img src="assets/img/header_logo_banner.png" alt="Doppler/Edward">
+    </a>
+    <div class="hamburger" onclick="document.querySelector('.links').classList.toggle('mobile-open')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="links">
+      <a href="/work.html">Work</a>
+      <a href="/rgm.html">RGM/TPM</a>
+      <a aria-current="page" href="/redline.html">Redline Sim</a>
+      <a href="/about.html">About</a>
+      <a href="/advocacy.html">Advocacy</a>
+      <a href="/team.html">ANSI Art Gallery</a>
+      <a class="cta" href="mailto:sysop@doppleredward.com">Email us</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero redline-hero">
+  <h1>REDLINE</h1>
+  <div class="hero-subtitle">SIMULATION ENGINE FOR FINANCE DECISIONS UNDER REAL CONSTRAINTS</div>
+  <p class="redline-intro">An interactive CFO office where students, managers, and executives learn to push a business to the edgewithout detonating the P&L in real life.</p>
+  <div class="status-line">
+    <span class="status-badge dev">STATUS: IN DEVELOPMENT</span>
+    <span class="status-badge pilot">PILOT PARTNERS WANTED</span>
+  </div>
+  <div class="hero-actions">
+    <a class="btn accent" href="mailto:joshua@doppleredward.com?subject=REDLINE - Request Demo">Request Demo</a>
+    <a class="btn" href="mailto:joshua@doppleredward.com?subject=REDLINE - Pilot Discussion">Discuss Pilot / Investment</a>
+  </div>
+</section>
+
+<main class="wrap redline-wrap">
+  <section class="redline-content">
+
+    <div class="section-header">
+      <span class="coord">[001]</span>
+      <h2>WHAT REDLINE IS</h2>
+    </div>
+
+    <div class="what-redline">
+      <h3>What is Redline?</h3>
+      <p>Redline is a simulation engine that teaches financial decision-making, not spreadsheet key-mashing.</p>
+      <p>Set inside a fictional industrial company, Redline drops players into a live CFO office: inventory, capacity, working capital, customer contracts, and a board breathing down their necks. No multiple-choice fantasiesevery move flows through full financial statements and a real operating model.</p>
+      <p>Participants don't "learn concepts." They run a business under pressure:</p>
+      <ul class="redline-list">
+        <li>Pricing, discounting, and trade terms</li>
+        <li>Volume risk, supply chain shocks, and production constraints</li>
+        <li>Cash flow crunches, credit risk, and audit scrutiny</li>
+      </ul>
+      <p class="redline-closing">Redline is built for the people who actually have to answer, "Why did we miss?"and for the educators and leaders who want them to miss less.</p>
+    </div>
+
+    <div class="tactical-divider">
+      <span class="crosshair">+</span>
+      <div class="line"></div>
+      <span class="crosshair">+</span>
+    </div>
+
+    <div class="section-header">
+      <span class="coord">[002]</span>
+      <h2>CORE SYSTEMS</h2>
+    </div>
+
+    <p class="core-systems-intro">Three integrated systems, one objective: teach the real cost of every decision.</p>
+
+    <div class="modules-grid">
+      <article class="module-card">
+        <div class="module-header">
+          <div class="module-title-bar">
+            <span class="module-id">MODULE_01</span>
+            <span class="module-status live">LIVE PROTOTYPE</span>
+          </div>
+          <h3>DECISION ENGINE</h3>
+        </div>
+        <div class="module-content">
+          <p>The in-game company has a full financial backbone:</p>
+          <ul>
+            <li>Income Statement, Balance Sheet, Cash Flow</li>
+            <li>Inventory and production capacity</li>
+            <li>Customer and contract portfolio</li>
+          </ul>
+          <p>Every decision (pricing, promo, volume commitments, supplier terms) drives real financial consequencesgood, bad, or ugly. No abstract "score," just the numbers you'd have to explain in a board pack.</p>
+        </div>
+      </article>
+
+      <article class="module-card">
+        <div class="module-header">
+          <div class="module-title-bar">
+            <span class="module-id">MODULE_02</span>
+            <span class="module-status live">LIVE PROTOTYPE</span>
+          </div>
+          <h3>SCENARIO & TELEMETRY LAYER</h3>
+        </div>
+        <div class="module-content">
+          <p>Redline runs as a sequence of scenariossupply shocks, demand spikes, cost increases, contract renegotiations.</p>
+          <p>Under the hood, a telemetry engine tracks:</p>
+          <ul>
+            <li>Choices made (what, when, and in what order)</li>
+            <li>Impact on margin, liquidity, and risk</li>
+            <li>Time-to-decision and information used</li>
+          </ul>
+          <p>This creates a decision fingerprint for each participant or team, making it easy to debrief: not just what they decided, but how they thought.</p>
+        </div>
+      </article>
+
+      <article class="module-card">
+        <div class="module-header">
+          <div class="module-title-bar">
+            <span class="module-id">MODULE_03</span>
+            <span class="module-status experimental">EXPERIMENTAL</span>
+          </div>
+          <h3>LLM-ASSISTED DYNAMICS</h3>
+        </div>
+        <div class="module-content">
+          <p>Redline uses a controlled GenAI layer to add semi-dynamic content:</p>
+          <ul>
+            <li>News feeds that surface shocks and opportunities</li>
+            <li>Supplier and customer "emails" and draft contracts</li>
+            <li>Nudges and challenge prompts that stress-test the player's reasoning</li>
+          </ul>
+          <p>The AI does not run the show; it adds noise and realism. The financial logic and scoring remain fully transparent and auditable.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="tactical-divider">
+      <span class="crosshair">+</span>
+      <div class="line"></div>
+      <span class="crosshair">+</span>
+    </div>
+
+    <div class="section-header">
+      <span class="coord">[003]</span>
+      <h2>WHERE REDLINE FITS</h2>
+    </div>
+
+    <p class="use-cases-intro">Built for serious training environments where role-play isn't enough and Excel isn't engaging.</p>
+
+    <div class="use-cases-grid">
+      <article class="use-case-card">
+        <h4>UNIVERSITIES & BUSINESS SCHOOLS</h4>
+        <ul>
+          <li>Courses in Finance, FP&A, Strategy, Accounting, Operations, and RGM</li>
+          <li>Replace static case studies with live, multi-period simulations</li>
+          <li>Give students something more realistic than a clean Harvard case and a retrofitted answer key</li>
+        </ul>
+      </article>
+
+      <article class="use-case-card">
+        <h4>CORPORATE FP&A, RGM & FINANCE ACADEMIES</h4>
+        <ul>
+          <li>Onboard new analysts and managers with a safe sandbox</li>
+          <li>Run team-based war games ahead of budget season or major investments</li>
+          <li>Train cross-functional teams (Finance, Sales, Supply Chain) to speak the same P&L language</li>
+        </ul>
+      </article>
+
+      <article class="use-case-card">
+        <h4>PRIVATE EQUITY & INVESTORS</h4>
+        <ul>
+          <li>Use Redline as a tabletop for management teams: how do they react under real constraints?</li>
+          <li>Stress-test pricing, capacity, and capital allocation instincts before handing over real money</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="tactical-divider">
+      <span class="crosshair">+</span>
+      <div class="line"></div>
+      <span class="crosshair">+</span>
+    </div>
+
+    <div class="section-header">
+      <span class="coord">[004]</span>
+      <h2>BUILD LOG</h2>
+    </div>
+
+    <p class="build-log-intro">Representative milestones from the current build. Names simplified; structure is real.</p>
+
+    <div class="build-logs">
+      <article class="build-log-entry">
+        <div class="build-log-header">
+          <span class="build-log-id">BUILD_LOG_001</span>
+          <h4>CFO OFFICE PROTOTYPE</h4>
+          <span class="build-status complete">COMPLETE</span>
+        </div>
+        <ul>
+          <li>Godot 4.5-based simulation with an interactive CFO office</li>
+          <li>Hotspots for financials, news, contracts, and compendium content</li>
+          <li>Dynamic financial panel wired to scenario data (top line, margin, cash)</li>
+        </ul>
+      </article>
+
+      <article class="build-log-entry">
+        <div class="build-log-header">
+          <span class="build-log-id">BUILD_LOG_002</span>
+          <h4>SCENARIO ENGINE & DATA LAYER</h4>
+          <span class="build-status complete">COMPLETE</span>
+        </div>
+        <ul>
+          <li>JSON-driven scenario structure (<span class="metric">12+ scenarios</span> planned)</li>
+          <li>Each scenario ties to: financials, news, supplier contracts, and risk levers</li>
+          <li>Transform layer ready for "carry-forward" cumulative financials</li>
+        </ul>
+      </article>
+
+      <article class="build-log-entry">
+        <div class="build-log-header">
+          <span class="build-log-id">BUILD_LOG_003</span>
+          <h4>CONTRACT & NEWS GENERATION</h4>
+          <span class="build-status progress">IN PROGRESS</span>
+        </div>
+        <ul>
+          <li>Supplier framework contract templates with variable injection</li>
+          <li>API concept for LLM-generated clause variations and news items under strict schema</li>
+          <li>Goal: <span class="metric">70% structured, 30% dynamic</span>no black-box magic</li>
+        </ul>
+      </article>
+
+      <article class="build-log-entry">
+        <div class="build-log-header">
+          <span class="build-log-id">BUILD_LOG_004</span>
+          <h4>TELEMETRY & ADMIN TOOLS</h4>
+          <span class="build-status planned">PLANNED</span>
+        </div>
+        <ul>
+          <li>Telemetry singleton to log decisions, timing, panel views, and submissions</li>
+          <li>Google Sheets / DB integration for instructor dashboards</li>
+          <li>Admin mode to jump scenarios, pause logging, and control difficulty</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="tactical-divider">
+      <span class="crosshair">+</span>
+      <div class="line"></div>
+      <span class="crosshair">+</span>
+    </div>
+
+    <div class="section-header">
+      <span class="coord">[005]</span>
+      <h2>INITIATE REDLINE</h2>
+    </div>
+
+    <div class="engagement-intro">
+      <p>We're actively building Redline with a small set of partners. If you run a program where financial decisions matter, we should talk.</p>
+    </div>
+
+    <div class="redline-engagement-modes">
+      <div class="redline-engagement-card">
+        <div class="engagement-bracket">[ ]</div>
+        <div class="engagement-content">
+          <h4>UNIVERSITY / PROGRAM PILOT</h4>
+          <p>Co-design a Redline run for your course or executive program.</p>
+        </div>
+      </div>
+
+      <div class="redline-engagement-card">
+        <div class="engagement-bracket">[ ]</div>
+        <div class="engagement-content">
+          <h4>CORPORATE TRAINING PILOT</h4>
+          <p>Use Redline to stress-test your FP&A, RGM, or commercial teams.</p>
+        </div>
+      </div>
+
+      <div class="redline-engagement-card">
+        <div class="engagement-bracket">[ ]</div>
+        <div class="engagement-content">
+          <h4>INVESTOR / PARTNER DISCUSSION</h4>
+          <p>Explore funding, co-development, or portfolio deployment.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-terminal">
+      <p class="cta-question">To discuss pilots, licensing, or investment:</p>
+      <span class="prompt">></span> <a class="btn accent" href="mailto:joshua@doppleredward.com?subject=REDLINE">joshua@doppleredward.com</a>
+      <p class="cta-subject">Subject line: <span class="highlight">REDLINE</span></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <pre class="footer-ansi">===========================================================================
+      © DOPPLER/EDWARD LLC  Become the storm
+===========================================================================</pre>
+  <p><span class="mono">doppler/edward</span>  process-first consulting. <a href="mailto:sysop@doppleredward.com">sysop@doppleredward.com</a></p>
+  <p class="foot-links"><a href="/work.html">Work</a> · <a href="/about.html">About</a> · <a href="/advocacy.html">Advocacy</a></p>
+</footer>
+</body>
+</html>
