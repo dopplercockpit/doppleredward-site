@@ -815,21 +815,878 @@ body:has(.rgm-hero) .footer-ansi {
   }
 }
 
-/* --- team page --- */
-.team-hero{
-  display:grid; grid-template-columns: minmax(280px, 520px) 1fr;
-  gap:2rem; align-items:start; margin-top: 1rem;
+/* ===== ABOUT PAGE: INDUSTRIAL HIGH-TECH AESTHETIC ===== */
+
+/* Override background for About page with gunmetal grey */
+body:has(.about-hero) {
+  background: radial-gradient(1000px 700px at 10% -10%, rgba(215,123,30,.06), transparent 40%),
+              radial-gradient(1000px 700px at 90% -10%, rgba(215,123,30,.03), transparent 40%),
+              #1A1A1A;
 }
-.portrait-wrap{
-  position:relative; background:var(--panel); border:1px solid var(--line);
-  border-radius: var(--radius); overflow:hidden; box-shadow: var(--shadow-soft);
+
+.about-hero {
+  text-align: center;
+  border-bottom: 1px solid rgba(215, 123, 30, 0.3);
 }
-.portrait-ansi{ display:block; width:min(90vw,520px); height:auto }
-.bio h2{ margin:.2rem 0 .6rem }
-.bio .title{ font:700 14px/1 var(--mono); color:#9aa3b8; text-transform:uppercase }
-.bio p{ color:var(--ink); margin:.65rem 0 }
-.bio .aside{ color:var(--ink-dim) }
-.bio .actions{ margin-top:.9rem; display:flex; gap:.6rem; flex-wrap:wrap }
+
+.about-hero h1 {
+  margin-bottom: 0.5rem;
+  font-family: var(--sans);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.about-wrap {
+  max-width: 1200px;
+}
+
+.about-content {
+  padding: 0 2rem;
+  line-height: 1.7;
+}
+
+/* Beliefs Grid */
+.beliefs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.belief-card {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(215, 123, 30, 0.25);
+  border-left: 3px solid rgba(215, 123, 30, 0.8);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.belief-card:hover {
+  background: rgba(25, 25, 25, 0.95);
+  border-color: rgba(215, 123, 30, 0.6);
+  box-shadow: 0 0 20px rgba(215, 123, 30, 0.15);
+}
+
+.belief-card h3 {
+  font-family: var(--mono);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: rgba(215, 123, 30, 1);
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.belief-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #b8c0d0;
+  margin: 0;
+}
+
+/* Leadership Terminal Section */
+.leadership-terminal {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2rem;
+  margin: 2rem 0 3rem;
+  background: rgba(20, 20, 20, 0.6);
+  border: 1px solid rgba(215, 123, 30, 0.3);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.profile-image-wrap {
+  position: relative;
+}
+
+.profile-image-wrap img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid rgba(215, 123, 30, 0.4);
+  box-shadow: 0 0 30px rgba(215, 123, 30, 0.2);
+  transition: all 0.3s ease;
+}
+
+.profile-image-wrap img:hover {
+  border-color: rgba(215, 123, 30, 0.8);
+  box-shadow: 0 0 40px rgba(215, 123, 30, 0.4);
+}
+
+.profile-content h3 {
+  font-family: var(--sans);
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.3px;
+}
+
+.profile-title {
+  font-family: var(--mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(215, 123, 30, 0.9);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.profile-bio {
+  font-size: 1.15em;
+  line-height: 1.6;
+  color: #e7ebf1;
+  margin: 1.5rem 0;
+  font-weight: 500;
+}
+
+.profile-content p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #d0d6e0;
+  margin: 1rem 0;
+}
+
+/* Capabilities Section */
+.capabilities-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.capability-group {
+  background: rgba(10, 10, 10, 0.5);
+  border: 1px solid rgba(215, 123, 30, 0.2);
+  border-radius: 6px;
+  padding: 1.2rem;
+}
+
+.capability-group h4 {
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: rgba(215, 123, 30, 0.9);
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(215, 123, 30, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.capability-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.capability-group li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #b8c0d0;
+}
+
+.capability-group li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: rgba(215, 123, 30, 0.7);
+  font-weight: 700;
+}
+
+/* Contact Terminal */
+.contact-terminal {
+  background: #0d0d0d;
+  border: 1px solid rgba(215, 123, 30, 0.4);
+  border-left: 3px solid rgba(215, 123, 30, 0.8);
+  padding: 1rem 1.2rem;
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 2rem;
+  border-radius: 4px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.contact-terminal .prompt {
+  color: rgba(215, 123, 30, 1);
+  font-weight: 700;
+}
+
+.contact-terminal a {
+  color: #00ff88;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.contact-terminal a:hover {
+  color: #00ffaa;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+/* Footer glow effect for About page */
+body:has(.about-hero) .footer-ansi {
+  text-shadow: 0 0 10px rgba(215, 123, 30, 0.4);
+}
+
+/* Mobile Responsive for About Page */
+@media (max-width: 768px) {
+  .about-content {
+    padding: 0 1rem;
+  }
+
+  .beliefs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .leadership-terminal {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .profile-image-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-image-wrap img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .capabilities-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== HOME PAGE: INDUSTRIAL HIGH-TECH AESTHETIC ===== */
+
+/* Override background for home page */
+body.home-page {
+  background: radial-gradient(1000px 700px at 10% -10%, rgba(215,123,30,.06), transparent 40%),
+              radial-gradient(1000px 700px at 90% -10%, rgba(215,123,30,.03), transparent 40%),
+              #1A1A1A;
+}
+
+.home-hero {
+  position: relative;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(215, 123, 30, 0.3);
+  margin-bottom: 0;
+}
+
+.hero-video-wrap {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 100px);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  opacity: 0.4;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,
+    rgba(26, 26, 26, 0.7) 0%,
+    rgba(26, 26, 26, 0.5) 50%,
+    rgba(26, 26, 26, 0.9) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.hero-content h1 {
+  font-size: clamp(32px, 4vw, 52px);
+  line-height: 1.2;
+  margin: 0 0 1.5rem;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.hero-content .mono {
+  font-family: var(--mono);
+  font-size: 0.65em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(215, 123, 30, 0.9);
+  font-weight: 600;
+}
+
+.hero-content .lead {
+  font-size: 1.15em;
+  line-height: 1.6;
+  color: #d0d6e0;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-wrap {
+  max-width: 1200px;
+}
+
+.home-content {
+  padding: 0 2rem;
+  line-height: 1.7;
+}
+
+/* Capabilities Home Grid */
+.capabilities-home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.capability-home-card {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(215, 123, 30, 0.25);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.capability-home-card:hover {
+  background: rgba(25, 25, 25, 0.95);
+  border-color: rgba(215, 123, 30, 0.6);
+  box-shadow: 0 0 20px rgba(215, 123, 30, 0.15);
+  transform: translateY(-2px);
+}
+
+.card-number {
+  font-family: var(--mono);
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(215, 123, 30, 0.4);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.capability-home-card h3 {
+  font-family: var(--sans);
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.75rem;
+}
+
+.capability-home-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #b8c0d0;
+  margin: 0.5rem 0;
+}
+
+.capability-home-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.capability-home-card li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin: 0.4rem 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #9aa3b8;
+  font-family: var(--mono);
+}
+
+.capability-home-card li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: rgba(215, 123, 30, 0.7);
+  font-weight: 700;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0 3rem;
+}
+
+.project-card {
+  background: rgba(20, 20, 20, 0.6);
+  border: 1px solid rgba(215, 123, 30, 0.25);
+  border-left: 3px solid rgba(215, 123, 30, 0.8);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  background: rgba(25, 25, 25, 0.9);
+  border-color: rgba(215, 123, 30, 0.6);
+  transform: translateX(4px);
+}
+
+.project-card h4 {
+  font-family: var(--mono);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: rgba(215, 123, 30, 1);
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+}
+
+.project-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #d0d6e0;
+  margin: 0.5rem 0;
+}
+
+.project-card .meta {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: #7b8496;
+  margin-top: 1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Footer glow for home page */
+body.home-page .footer-ansi {
+  text-shadow: 0 0 10px rgba(215, 123, 30, 0.4);
+}
+
+/* Mobile Responsive for Home Page */
+@media (max-width: 768px) {
+  .home-hero {
+    min-height: 500px;
+  }
+
+  .hero-content {
+    padding: 2rem 1rem;
+  }
+
+  .home-content {
+    padding: 0 1rem;
+  }
+
+  .capabilities-home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== ADVOCACY PAGE: INDUSTRIAL HIGH-TECH AESTHETIC ===== */
+
+/* Override background for Advocacy page */
+body:has(.advocacy-hero) {
+  background: radial-gradient(1000px 700px at 10% -10%, rgba(215,123,30,.06), transparent 40%),
+              radial-gradient(1000px 700px at 90% -10%, rgba(215,123,30,.03), transparent 40%),
+              #1A1A1A;
+}
+
+.advocacy-hero {
+  text-align: center;
+  border-bottom: 1px solid rgba(215, 123, 30, 0.3);
+}
+
+.advocacy-hero h1 {
+  margin-bottom: 0.5rem;
+  font-family: var(--sans);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.advocacy-wrap {
+  max-width: 1200px;
+}
+
+.advocacy-content {
+  padding: 0 2rem;
+  line-height: 1.7;
+}
+
+/* ANSI Hero for Advocacy */
+.ansi-hero-advocacy {
+  margin: 2rem 0;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(215, 123, 30, 0.3);
+  box-shadow: 0 0 30px rgba(215, 123, 30, 0.15);
+}
+
+.ansi-hero-advocacy img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hint {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-family: var(--mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(215, 123, 30, 0.6);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  z-index: 3;
+}
+
+.art-actions {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn.ghost {
+  background: transparent;
+  border-color: rgba(215, 123, 30, 0.4);
+  color: rgba(215, 123, 30, 1);
+}
+
+.btn.ghost:hover {
+  background: rgba(215, 123, 30, 0.1);
+  border-color: rgba(215, 123, 30, 0.8);
+}
+
+/* Advocacy Beliefs */
+.advocacy-beliefs {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.advocacy-belief-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: rgba(20, 20, 20, 0.6);
+  border: 1px solid rgba(215, 123, 30, 0.25);
+  border-left: 3px solid rgba(215, 123, 30, 0.8);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.advocacy-belief-card:hover {
+  background: rgba(25, 25, 25, 0.9);
+  border-color: rgba(215, 123, 30, 0.6);
+  transform: translateX(4px);
+}
+
+.belief-icon {
+  color: rgba(215, 123, 30, 0.8);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.advocacy-belief-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #d0d6e0;
+  margin: 0;
+}
+
+/* Advocacy Projects Grid */
+.advocacy-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.advocacy-project-card {
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(215, 123, 30, 0.25);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.advocacy-project-card:hover {
+  background: rgba(25, 25, 25, 0.95);
+  border-color: rgba(215, 123, 30, 0.6);
+  box-shadow: 0 0 20px rgba(215, 123, 30, 0.15);
+}
+
+.project-number {
+  font-family: var(--mono);
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(215, 123, 30, 0.4);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.advocacy-project-card h4 {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.5rem;
+}
+
+.advocacy-project-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #b8c0d0;
+  margin: 0.5rem 0;
+}
+
+.advocacy-project-card .meta {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: #7b8496;
+  margin-top: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+/* CTA Terminal */
+.cta-terminal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: rgba(10, 10, 10, 0.6);
+  border: 1px solid rgba(215, 123, 30, 0.3);
+  border-radius: 8px;
+}
+
+.cta-terminal .prompt {
+  font-family: var(--mono);
+  font-size: 20px;
+  color: rgba(215, 123, 30, 1);
+  font-weight: 700;
+}
+
+/* Footer glow for advocacy page */
+body:has(.advocacy-hero) .footer-ansi {
+  text-shadow: 0 0 10px rgba(215, 123, 30, 0.4);
+}
+
+/* Mobile Responsive for Advocacy Page */
+@media (max-width: 768px) {
+  .advocacy-content {
+    padding: 0 1rem;
+  }
+
+  .advocacy-projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-terminal {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* ========== ANSI ART GALLERY PAGE ========== */
+body.gallery-page {
+  background: radial-gradient(1400px 900px at 20% -10%, rgba(215, 123, 30, 0.12), transparent 50%),
+              radial-gradient(1000px 700px at 80% -10%, rgba(215, 123, 30, 0.08), transparent 45%),
+              #1A1A1A;
+  background-attachment: fixed;
+}
+
+.gallery-hero {
+  text-align: center;
+  padding: 3rem 1.5rem 2.5rem;
+  border-bottom: 1px solid rgba(215, 123, 30, 0.3);
+  background: linear-gradient(180deg, rgba(26, 26, 26, 0.9) 0%, rgba(10, 10, 10, 0.5) 100%);
+  margin-bottom: 3rem;
+}
+
+.gallery-hero h1 {
+  font-family: var(--mono);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  color: rgba(215, 123, 30, 0.95);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(215, 123, 30, 0.3);
+}
+
+.gallery-intro {
+  max-width: 800px;
+  margin: 1.5rem auto 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.gallery-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+.gallery-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Gallery team-hero cards with industrial aesthetic */
+.team-hero {
+  display: grid;
+  grid-template-columns: minmax(280px, 520px) 1fr;
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem;
+  background: rgba(20, 20, 20, 0.6);
+  border: 1px solid rgba(215, 123, 30, 0.25);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.team-hero:hover {
+  border-color: rgba(215, 123, 30, 0.5);
+  box-shadow: 0 8px 24px rgba(215, 123, 30, 0.15),
+              0 0 40px rgba(215, 123, 30, 0.08);
+  transform: translateY(-2px);
+}
+
+.portrait-wrap {
+  position: relative;
+  background: #0d0d0d;
+  border: 2px solid rgba(215, 123, 30, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5),
+              inset 0 0 30px rgba(215, 123, 30, 0.05);
+  transition: all 0.3s ease;
+}
+
+.team-hero:hover .portrait-wrap {
+  border-color: rgba(215, 123, 30, 0.6);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6),
+              0 0 30px rgba(215, 123, 30, 0.2),
+              inset 0 0 40px rgba(215, 123, 30, 0.1);
+}
+
+.portrait-ansi {
+  display: block;
+  width: min(90vw, 520px);
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.team-hero:hover .portrait-ansi {
+  transform: scale(1.02);
+}
+
+.bio h2 {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.3;
+}
+
+.bio .title {
+  font: 700 13px/1.4 var(--mono);
+  color: rgba(215, 123, 30, 0.85);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.bio p {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0.85rem 0;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.bio .aside {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  font-style: italic;
+  border-left: 3px solid rgba(215, 123, 30, 0.4);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+}
+
+.bio .actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Gallery footer glow effect */
+body.gallery-page .footer {
+  border-top: 1px solid rgba(215, 123, 30, 0.2);
+  padding-top: 2rem;
+  background: linear-gradient(180deg, transparent 0%, rgba(215, 123, 30, 0.03) 100%);
+}
+
+/* Mobile responsive for gallery */
+@media (max-width: 768px) {
+  .gallery-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .team-hero {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .portrait-wrap {
+    max-width: 100%;
+  }
+
+  .portrait-ansi {
+    width: 100%;
+  }
+}
 
 /* --- footer --- */
 .footer{

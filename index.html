@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="home-page">
 <header class="site-header">
   <div class="nav">
     <a class="brand" href="/">
@@ -34,47 +34,109 @@
   </div>
 </header>
 
-<main class="wrap">
-  <section class="hero">
-    <div class="hero-img crt">
-      <img src="assets/img/hero-ascii-banner.jpg" alt="ASCII galaxy banner" onerror="this.style.display='none'">
+<section class="page-hero home-hero">
+  <div class="hero-video-wrap">
+    <video autoplay loop playsinline class="hero-video" id="heroVideo">
+      <source src="assets/img/home_page_vid.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <h1>Process-first consulting.<br><span class="mono">Protecting tech investments.</span></h1>
+    <p class="lead">We fix broken processes, prevent bad tech buys, and ship resilient systems across FP&amp;A, revenue planning (RGM), demand forecasting, and pragmatic AI.</p>
+    <div class="actions">
+      <a class="btn accent" href="/work.html">See our work</a>
+      <a class="btn" href="mailto:sysop@doppleredward.com">sysop@doppleredward.com</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Set video volume to 50% on load
+  const heroVideo = document.getElementById('heroVideo');
+  if (heroVideo) {
+    heroVideo.volume = 0.5;
+    heroVideo.muted = false;
+  }
+</script>
+
+<main class="wrap home-wrap">
+  <section class="home-content">
+    <div class="tactical-divider">
+      <span class="crosshair">+</span>
+      <div class="line"></div>
+      <span class="crosshair">+</span>
     </div>
 
-    <div>
-      <h1>Process-first consulting.<br><span class="mono">Protecting tech investments.</span></h1>
-      <p class="lead">We fix broken processes, prevent bad tech buys, and ship resilient systems across FP&amp;A, revenue planning (RGM), demand forecasting, and pragmatic AI.</p>
-      <div class="actions">
-        <a class="btn accent" href="/work.html">See our work</a>
-        <a class="btn" href="mailto:sysop@doppleredward.com">sysop@doppleredward.com</a>
-      </div>
+    <div class="section-header">
+      <span class="coord">[001]</span>
+      <h2>CORE CAPABILITIES</h2>
     </div>
-  </section>
 
-  <section class="section">
-    <div class="tiles">
-      <article class="tile">
-        <h3>Rescue &amp; Triage</h3>
+    <div class="capabilities-home-grid">
+      <article class="capability-home-card">
+        <div class="card-number">01</div>
+        <h3>Rescue & Triage</h3>
         <p>Post-SaaS rollout rescue and deployment triage. We identify failure points fast and rebuild workflows that actually run.</p>
-        <ul><li>Root-cause analysis</li><li>Workflow redesign</li><li>Vendor stabilization</li></ul>
+        <ul>
+          <li>Root-cause analysis</li>
+          <li>Workflow redesign</li>
+          <li>Vendor stabilization</li>
+        </ul>
       </article>
-      <article class="tile">
-        <h3>Finance Systems &amp; Planning</h3>
-        <p>FP&amp;A modeling, KPI design, demand forecasting, and governance for numbers you can trust.</p>
-        <ul><li>Scenario modeling &amp; reporting</li><li>Controls &amp; auditability</li><li>Enablement &amp; adoption</li></ul>
+
+      <article class="capability-home-card">
+        <div class="card-number">02</div>
+        <h3>Finance Systems & Planning</h3>
+        <p>FP&A modeling, KPI design, demand forecasting, and governance for numbers you can trust.</p>
+        <ul>
+          <li>Scenario modeling & reporting</li>
+          <li>Controls & auditability</li>
+          <li>Enablement & adoption</li>
+        </ul>
       </article>
-      <article class="tile">
+
+      <article class="capability-home-card">
+        <div class="card-number">03</div>
         <h3>Pragmatic AI</h3>
         <p>GenAI apps that augment planning and controls—documented, measurable, and aligned with risk policy.</p>
-        <ul><li>Prototypes</li><li>Data workflow fit</li><li>Guardrails &amp; transparency</li></ul>
+        <ul>
+          <li>Prototypes</li>
+          <li>Data workflow fit</li>
+          <li>Guardrails & transparency</li>
+        </ul>
       </article>
     </div>
-  </section>
 
-  <section class="section">
-    <div class="cards">
-      <div class="card"><h4>API Call Package</h4><p>Weather apps and Discord bots that serve as hands-on guides and examples for digitization in finance and marketing.</p><div class="meta">S&amp;OP • RGM • FP&amp;A</div></div>
-      <div class="card"><h4>Revenue Planning &amp; CFO Simulator</h4><p>Scenario modeling and training tools for GTM-focused teams and business students.</p><div class="meta">Adoption lift • Single source of truth • Change management</div></div>
-      <div class="card"><h4>Ad-Hoc Assignments</h4><p>GPT-powered app building for SMEs/SMBs, aligned with digital and financial literacy.</p><div class="meta">Programming education • Open methods • Policy literacy</div></div>
+    <div class="tactical-divider">
+      <span class="crosshair">+</span>
+      <div class="line"></div>
+      <span class="crosshair">+</span>
+    </div>
+
+    <div class="section-header">
+      <span class="coord">[002]</span>
+      <h2>EDUCATIONAL & LAB WORK</h2>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <h4>API Call Package</h4>
+        <p>Weather apps and Discord bots that serve as hands-on guides and examples for digitization in finance and marketing.</p>
+        <div class="meta">S&OP • RGM • FP&A</div>
+      </div>
+
+      <div class="project-card">
+        <h4>Revenue Planning & CFO Simulator</h4>
+        <p>Scenario modeling and training tools for GTM-focused teams and business students.</p>
+        <div class="meta">Adoption lift • Single source of truth • Change management</div>
+      </div>
+
+      <div class="project-card">
+        <h4>Ad-Hoc Assignments</h4>
+        <p>GPT-powered app building for SMEs/SMBs, aligned with digital and financial literacy.</p>
+        <div class="meta">Programming education • Open methods • Policy literacy</div>
+      </div>
     </div>
   </section>
 </main>
