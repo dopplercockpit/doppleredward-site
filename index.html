@@ -37,10 +37,22 @@
 
 <section class="page-hero home-hero">
   <div class="hero-video-wrap">
-    <video autoplay loop playsinline class="hero-video" id="heroVideo">
+    <video autoplay muted loop playsinline class="hero-video" id="heroVideo">
       <source src="assets/img/home_page_vid.mp4" type="video/mp4">
     </video>
     <div class="video-overlay"></div>
+    <button class="video-mute-toggle" id="muteToggle" aria-label="Toggle video sound">
+      <svg class="mute-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+        <line class="sound-off-line" x1="23" y1="9" x2="17" y2="15"></line>
+        <line class="sound-off-line" x1="17" y1="9" x2="23" y2="15"></line>
+      </svg>
+      <svg class="unmute-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+        <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+        <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+      </svg>
+    </button>
   </div>
   <div class="hero-content">
     <h1>Process-first consulting.<br><span class="mono">Protecting tech investments.</span></h1>
@@ -53,11 +65,32 @@
 </section>
 
 <script>
-  // Set video volume to 50% on load
+  // Video starts muted for autoplay, then can be unmuted after user interaction
   const heroVideo = document.getElementById('heroVideo');
-  if (heroVideo) {
+  const muteToggle = document.getElementById('muteToggle');
+
+  if (heroVideo && muteToggle) {
     heroVideo.volume = 0.5;
-    heroVideo.muted = false;
+
+    // Update button appearance based on mute state
+    function updateMuteButton() {
+      if (heroVideo.muted) {
+        muteToggle.classList.add('muted');
+        muteToggle.classList.remove('unmuted');
+      } else {
+        muteToggle.classList.add('unmuted');
+        muteToggle.classList.remove('muted');
+      }
+    }
+
+    // Initialize button state
+    updateMuteButton();
+
+    // Toggle mute on click
+    muteToggle.addEventListener('click', function() {
+      heroVideo.muted = !heroVideo.muted;
+      updateMuteButton();
+    });
   }
 </script>
 

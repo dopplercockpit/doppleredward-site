@@ -1119,6 +1119,68 @@ body.home-page {
   );
 }
 
+.video-mute-toggle {
+  position: absolute;
+  bottom: 60px;
+  right: 30px;
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  background: rgba(26, 26, 26, 0.9);
+  border: 1px solid rgba(215, 123, 30, 0.5);
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  padding: 0;
+  backdrop-filter: blur(4px);
+}
+
+.video-mute-toggle:hover {
+  background: rgba(26, 26, 26, 0.95);
+  border-color: rgba(215, 123, 30, 0.7);
+  transform: scale(1.05);
+}
+
+.video-mute-toggle svg {
+  width: 22px;
+  height: 22px;
+  color: rgba(215, 123, 30, 0.9);
+  transition: opacity 0.2s ease;
+}
+
+.video-mute-toggle.muted .unmute-icon {
+  display: none;
+}
+
+.video-mute-toggle.muted .mute-icon {
+  display: block;
+}
+
+.video-mute-toggle.unmuted .mute-icon {
+  display: none;
+}
+
+.video-mute-toggle.unmuted .unmute-icon {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .video-mute-toggle {
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    right: 20px;
+  }
+
+  .video-mute-toggle svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .hero-content {
   position: relative;
   z-index: 2;
