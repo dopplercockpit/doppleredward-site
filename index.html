@@ -1,186 +1,316 @@
 <!doctype html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="utf-8" />
-  <title>Doppler/Edward — Process-First Consulting for Real Results</title>
+
+  <title>Doppler/Edward &mdash; Process-First Consulting for Real Results</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="We fix broken business processes, prevent bad tech buys, and ship resilient systems. FP&A, planning, and AI—minus the hype." />
+
+  <meta name="description" content="We fix broken business processes, prevent bad tech buys, and ship resilient systems. FP&A, planning, and AI&mdash;minus the hype." />
+
   <meta property="og:title" content="Doppler/Edward" />
-  <meta property="og:description" content="Process-first consulting. FP&A, planning, AI—minus the hype." />
+
+  <meta property="og:description" content="Process-first consulting. FP&A, planning, AI&mdash;minus the hype." />
+
   <meta property="og:image" content="assets/img/logo_primary_light_copy.png" />
+
   <link rel="icon" href="assets/favicon/favicon.ico">
+
   <link rel="stylesheet" href="css/styles.css" />
+
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body class="home-page">
+
 <header class="site-header">
+
   <div class="nav">
+
     <a class="brand" href="/">
+
       <img src="assets/img/header_logo_banner.png" alt="Doppler/Edward">
+
     </a>
-    <div class="hamburger" onclick="document.querySelector('.links').classList.toggle('mobile-open')">
+
+    <div class="hamburger" data-nav-toggle aria-expanded="false">
+
       <span></span>
+
       <span></span>
+
       <span></span>
+
     </div>
+
     <nav class="links">
+
       <a href="/work.html">Work</a>
+
       <a href="/rgm.html">RGM/TPM</a>
+
       <a href="/redline.html">Redline Sim</a>
+
       <a href="/about.html">About</a>
+
       <a href="/advocacy.html">Advocacy</a>
+
       <a href="/team.html">ANSI Art Gallery</a>
+
       <a class="cta" href="mailto:sysop@doppleredward.com">Email us</a>
+
     </nav>
+
   </div>
+
 </header>
 
+
+
 <section class="page-hero home-hero">
+
   <div class="hero-video-wrap">
+
     <video autoplay muted loop playsinline class="hero-video" id="heroVideo">
+
       <source src="assets/img/home_page_vid.mp4" type="video/mp4">
+
     </video>
+
     <div class="video-overlay"></div>
+
     <button class="video-mute-toggle" id="muteToggle" aria-label="Toggle video sound">
+
       <svg class="mute-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
         <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+
         <line class="sound-off-line" x1="23" y1="9" x2="17" y2="15"></line>
+
         <line class="sound-off-line" x1="17" y1="9" x2="23" y2="15"></line>
+
       </svg>
+
       <svg class="unmute-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
         <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+
         <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+
         <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+
       </svg>
+
     </button>
+
   </div>
+
   <div class="hero-content">
+
     <h1>Process-first consulting.<br><span class="mono">Protecting tech investments.</span></h1>
+
     <p class="lead">We fix broken processes, prevent bad tech buys, and ship resilient systems across FP&amp;A, revenue planning (RGM), demand forecasting, and pragmatic AI.</p>
+
     <div class="actions">
+
       <a class="btn accent" href="/work.html">See our work</a>
+
       <a class="btn" href="mailto:sysop@doppleredward.com">sysop@doppleredward.com</a>
+
     </div>
+
   </div>
+
 </section>
 
-<script>
-  // Video starts muted for autoplay, then can be unmuted after user interaction
-  const heroVideo = document.getElementById('heroVideo');
-  const muteToggle = document.getElementById('muteToggle');
 
-  if (heroVideo && muteToggle) {
-    heroVideo.volume = 0.5;
 
-    // Update button appearance based on mute state
-    function updateMuteButton() {
-      if (heroVideo.muted) {
-        muteToggle.classList.add('muted');
-        muteToggle.classList.remove('unmuted');
-      } else {
-        muteToggle.classList.add('unmuted');
-        muteToggle.classList.remove('muted');
-      }
-    }
 
-    // Initialize button state
-    updateMuteButton();
-
-    // Toggle mute on click
-    muteToggle.addEventListener('click', function() {
-      heroVideo.muted = !heroVideo.muted;
-      updateMuteButton();
-    });
-  }
-</script>
 
 <main class="wrap home-wrap">
+
   <section class="home-content">
+
     <div class="tactical-divider">
+
       <span class="crosshair">+</span>
+
       <div class="line"></div>
+
       <span class="crosshair">+</span>
+
     </div>
 
+
+
     <div class="section-header">
+
       <span class="coord">[001]</span>
+
       <h2>CORE CAPABILITIES</h2>
+
     </div>
+
+
 
     <div class="capabilities-home-grid">
+
       <article class="capability-home-card">
+
         <div class="card-number">01</div>
+
         <h3>Rescue & Triage</h3>
+
         <p>Post-SaaS rollout rescue and deployment triage. We identify failure points fast and rebuild workflows that actually run.</p>
+
         <ul>
+
           <li>Root-cause analysis</li>
+
           <li>Workflow redesign</li>
+
           <li>Vendor stabilization</li>
+
         </ul>
+
       </article>
 
+
+
       <article class="capability-home-card">
+
         <div class="card-number">02</div>
+
         <h3>Finance Systems & Planning</h3>
+
         <p>FP&A modeling, KPI design, demand forecasting, and governance for numbers you can trust.</p>
+
         <ul>
+
           <li>Scenario modeling & reporting</li>
+
           <li>Controls & auditability</li>
+
           <li>Enablement & adoption</li>
+
         </ul>
+
       </article>
 
+
+
       <article class="capability-home-card">
+
         <div class="card-number">03</div>
+
         <h3>Pragmatic AI</h3>
-        <p>GenAI apps that augment planning and controls—documented, measurable, and aligned with risk policy.</p>
+
+        <p>GenAI apps that augment planning and controls&mdash;documented, measurable, and aligned with risk policy.</p>
+
         <ul>
+
           <li>Prototypes</li>
+
           <li>Data workflow fit</li>
+
           <li>Guardrails & transparency</li>
+
         </ul>
+
       </article>
+
     </div>
+
+
 
     <div class="tactical-divider">
+
       <span class="crosshair">+</span>
+
       <div class="line"></div>
+
       <span class="crosshair">+</span>
+
     </div>
+
+
 
     <div class="section-header">
+
       <span class="coord">[002]</span>
+
       <h2>EDUCATIONAL & LAB WORK</h2>
+
     </div>
+
+
 
     <div class="projects-grid">
+
       <div class="project-card">
+
         <h4>API Call Package</h4>
+
         <p>Weather apps and Discord bots that serve as hands-on guides and examples for digitization in finance and marketing.</p>
-        <div class="meta">S&OP • RGM • FP&A</div>
+
+        <div class="meta">S&OP &bull; RGM &bull; FP&A</div>
+
       </div>
 
+
+
       <div class="project-card">
+
         <h4>Revenue Planning & CFO Simulator</h4>
+
         <p>Scenario modeling and training tools for GTM-focused teams and business students.</p>
-        <div class="meta">Adoption lift • Single source of truth • Change management</div>
+
+        <div class="meta">Adoption lift &bull; Single source of truth &bull; Change management</div>
+
       </div>
 
+
+
       <div class="project-card">
+
         <h4>Ad-Hoc Assignments</h4>
+
         <p>GPT-powered app building for SMEs/SMBs, aligned with digital and financial literacy.</p>
-        <div class="meta">Programming education • Open methods • Policy literacy</div>
+
+        <div class="meta">Programming education &bull; Open methods &bull; Policy literacy</div>
+
       </div>
+
     </div>
+
   </section>
+
 </main>
 
+
+
 <footer class="footer">
+
   <pre class="footer-ansi">===========================================================================
-      © DOPPLER/EDWARD LLC — Become the storm
+
+      &copy; DOPPLER/EDWARD LLC &mdash; Become the storm
+
 ===========================================================================</pre>
-  <p><span class="mono">doppler/edward</span> — process-first consulting. <a href="mailto:sysop@doppleredward.com">sysop@doppleredward.com</a></p>
-  <p class="foot-links"><a href="/work.html">Work</a> · <a href="/about.html">About</a> · <a href="/advocacy.html">Advocacy</a></p>
+
+  <p><span class="mono">doppler/edward</span> &mdash; process-first consulting. <a href="mailto:sysop@doppleredward.com">sysop@doppleredward.com</a></p>
+
+  <p class="foot-links"><a href="/work.html">Work</a>  &middot;  <a href="/about.html">About</a>  &middot;  <a href="/advocacy.html">Advocacy</a></p>
+
 </footer>
+
+<script src="js/site.js" defer></script>
+
 </body>
+
 </html>
+
