@@ -387,3 +387,9 @@ Below is **developer-ready copy**, page by page, with each element clearly label
 ---
 
 
+### 2026-01-08 narrative update
+
+* Elevated Trade Governance Architecture across home, work, rgm, about, team, and redline pages.
+* Added the enforcement-layer loop and proof hook on the RGM page.
+* Inserted the Trade Governance section, client environments line, and tightened trade control language on Work.
+* Unified primary CTA email to `sysop@doppleredward.com` and set the home capability grid to 2x2.

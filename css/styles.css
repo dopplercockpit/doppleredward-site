@@ -537,6 +537,32 @@ body:has(.rgm-hero) {
   margin: 0;
 }
 
+.cycle-enforcement {
+  margin-top: 1.5rem;
+}
+
+.cycle-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.cycle-list li {
+  color: #b8c0d0;
+  padding: 0.35rem 0 0.35rem 1.5rem;
+  position: relative;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.cycle-list li::before {
+  content: "ƒ-÷";
+  position: absolute;
+  left: 0;
+  color: rgba(215, 123, 30, 0.7);
+  font-size: 0.9rem;
+}
+
 /* Connectors between cycle cards */
 .connector {
   position: absolute;
@@ -579,6 +605,13 @@ body:has(.rgm-hero) {
   font-weight: 600;
   color: #ffffff;
   margin-top: 2rem;
+}
+
+.proof-hook {
+  font-family: var(--mono);
+  color: rgba(215, 123, 30, 0.95);
+  margin: -1rem 0 2rem;
+  font-size: 0.95rem;
 }
 
 /* AI Focus Section */
@@ -1217,6 +1250,16 @@ body.home-page {
   margin-right: auto;
 }
 
+.hero-content .specialty-line {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: rgba(215, 123, 30, 0.85);
+  margin: -1rem auto 2rem;
+  max-width: 760px;
+  letter-spacing: 0.3px;
+}
+
 .home-wrap {
   max-width: 1200px;
 }
@@ -1229,7 +1272,7 @@ body.home-page {
 /* Capabilities Home Grid */
 .capabilities-home-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin: 2rem 0;
 }
@@ -1782,6 +1825,47 @@ body.work-page {
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.85);
   font-weight: 500;
+}
+
+.trade-governance-intro {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  margin: 0.5rem 0 1rem;
+}
+
+.trade-governance-note {
+  font-family: var(--mono);
+  color: rgba(215, 123, 30, 0.9);
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+}
+
+.trade-governance-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.trade-governance-list li {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.4rem 0 0.4rem 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.trade-governance-list li::before {
+  content: "ƒ-÷";
+  position: absolute;
+  left: 0;
+  color: rgba(215, 123, 30, 0.7);
+  font-size: 0.9rem;
+}
+
+.client-env {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: -1rem 0 2rem;
 }
 
 .work-wrap {
