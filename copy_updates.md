@@ -1,395 +1,180 @@
+# SITE_COPY_V4 — Doppler/Edward Website Copy (Implement Verbatim)
+Date: 2026-02-18
+Rule: Keep existing layout and section structure. Replace copy only. Use “we.”
 
-Below is **developer-ready copy**, page by page, with each element clearly labeled.
+CTA standard:
+- Replace “Email us” CTA label with: “Book a 30-minute diagnostic call”
+- Link: mailto:sysop@doppleredward.com?subject=30-minute%20Diagnostic%20Call
 
----
-
-## 🔹 HOME PAGE (`index.html`)
-
-### Hero section
-
-* **Hero heading:**
-  `Process-first consulting.`
-
-* **Hero subheading:**
-  `Protecting tech investments.`
-
-* **Hero body copy:**
-  `We fix broken processes, prevent bad tech buys, and ship resilient systems across FP&A, revenue planning (RGM), demand forecasting, and pragmatic AI.`
-
-* **Primary CTA button text:**
-  `See our work`
-
-* **Secondary CTA button text (email):**
-  `sysop@doppleredward.com`
+NAV:
+- Keep all existing nav items.
+- Add Blog link: /blog.html (after RGM/TPM)
+- Create missing /work.html (nav currently points there and it is broken)
 
 ---
 
-### Services section (3 tiles/cards)
+## index.html (Home)
 
-**Card 1**
+### <title>
+Doppler/Edward — Commercial Execution Systems Advisory
 
-* **Title:**
-  `Rescue & Triage`
+### <meta name="description">
+Executive advisory for commercial execution systems in ERP-centric environments: RGM/TPM/TPx, trade governance, margin integrity, and end-to-end commercial finance systems.
 
-* **Body:**
-  `Post-SaaS rollout rescue and deployment triage. We identify failure points fast and rebuild workflows that actually run.`
-
-* **Bullets (list items):**
-
-  * `Root-cause analysis`
-  * `Workflow redesign`
-  * `Vendor stabilization`
+### OG description (og:description)
+Executive advisory for commercial execution systems: trade governance, margin integrity, and ERP-adjacent RGM/TPM/TPx.
 
 ---
 
-**Card 2**
+## Home Hero (keep structure; update copy only)
 
-* **Title:**
-  `Finance Systems & Planning`
+### H1 (replace existing)
+Commercial Execution Systems.<br><span class="mono">Economic integrity, end-to-end.</span>
 
-* **Body:**
-  `FP&A modeling, KPI design, demand forecasting, and governance for numbers you can trust.`
+### Lead paragraph (replace existing)
+We help CPG and consumer businesses stabilize commercial execution stacks in ERP-centric environments — RGM/TPM/TPx, trade spend, pricing, and revenue planning — so trade and margin outcomes become economically predictable.
 
-* **Bullets:**
+### Specialty line (replace existing)
+Specialty: Trade Governance & Margin Integrity — contract-to-system alignment, accrual discipline, settlement controls, and channel integrity enforced through operating model and (when needed) contract.
 
-  * `Scenario modeling & reporting`
-  * `Controls & auditability`
-  * `Enablement & adoption`
+### Add ONE additional short line beneath specialty-line (new p, not a new section)
+We are SAP-adjacent: we validate the commercial logic, governance, and data flows ERP-centric stacks depend on — not generic ERP implementation.
 
----
-
-**Card 3**
-
-* **Title:**
-  `Pragmatic AI`
-
-* **Body:**
-  `GenAI apps that augment planning and controls—documented, measurable, and aligned with risk policy.`
-
-* **Bullets:**
-
-  * `Prototypes`
-  * `Data workflow fit`
-  * `Guardrails & transparency`
+### Hero Buttons (keep layout)
+- “See our work” stays but ensure /work.html exists.
+- Replace the email button text from “sysop@doppleredward.com” to: “Book a 30-minute diagnostic call”
+- Link to the standard mailto with subject line.
 
 ---
 
-### Educational / Labs section (3 tiles/cards)
+## CORE CAPABILITIES section (keep the grid; tighten to 4 cards; preserve styling)
 
-# Place this as the next section after Services (3 horizontally on desktop, stacked on mobile).
+### Card 01 (keep title “Rescue & Triage”; replace paragraph + bullets)
+Paragraph:
+Post go-live stabilization for commercial platforms. We isolate failure points fast and restore workflow reality — without turning month-end into a negotiation.
 
-**Card 1**
+Bullets:
+- Root-cause isolation (data → logic → workflow)
+- Vendor accountability (high/critical issues)
+- Stabilization plan and execution cadence
 
-* **Title:**
-  `API Call Package`
+### Card 02 (rename title from “Finance Systems & Planning” to “Commercial Finance Systems”)
+Paragraph:
+End-to-end commercial finance systems validation: trade execution → ERP postings → FP&A forecasts. We make the economic story consistent across systems.
 
-* **Body:**
-  `Weather apps and Discord bots that serve as hands-on guides and examples for digitization in finance and marketing.`
+Bullets:
+- Integration and posting logic validation
+- Forecasting alignment with execution reality
+- Controls, auditability, and decision rights
 
-* **Tagline line (small text under body):**
-  `S&OP • RGM • FP&A`
+### Card 03 (rename title from “Pragmatic AI” to “System Interrogation at Scale”)
+Paragraph:
+We use automation and AI internally to accelerate analysis — contract parsing, exception detection, and variance triage — with documented logic and clear audit trails.
 
----
+Bullets:
+- Contract-to-system mapping support
+- Exception detection and sampling
+- Documented methods, not black boxes
 
-**Card 2**
+### Card 04 (keep title “Trade Governance Architecture”; tighten paragraph + bullets)
+Paragraph:
+The enforceable operating layer behind RGM: trade spend governance, accrual discipline, settlement controls, and channel integrity.
 
-* **Title:**
-  `Revenue Planning & CFO Simulator`
-
-* **Body:**
-  `Scenario modeling and training tools for GTM-focused teams and business students.`
-
-* **Tagline:**
-  `Adoption lift • Single source of truth • Change management`
-
----
-
-**Card 3**
-
-* **Title:**
-  `Ad-Hoc Assignments`
-
-* **Body:**
-  `GPT-powered app building for SMEs/SMBs, aligned with digital and financial literacy.`
-
-* **Tagline:**
-  `Programming education • Open methods • Policy literacy`
+Bullets (tighten list; remove jargon-heavy phrasing):
+- Trade spend governance (funding logic, accrual rules, dispute windows)
+- Pricing and promotion integrity (approved intent vs configured logic)
+- Settlement discipline (claims, deductions, compliance economics)
+- Channel integrity (anti-diversion, accountability, enforceable consequences)
 
 ---
 
-## 🔹 WORK PAGE (`work.html`)
+## EDUCATIONAL & LAB WORK section (keep structure; reduce “random app” vibe)
 
-### Intro block
+### Project 1 Title (rename “API Call Package” to “Applied Systems Demos”)
+Copy:
+Small, concrete demos used to teach and validate commercial systems logic — examples that make process design measurable.
 
-* **Section heading:**
-  `Selected work`
+Meta:
+RGM • FP&A • Data Flows
 
-* **Intro text:**
-  `Representative engagements that show our range and approach.`
+### Project 2 Title (keep “Revenue Planning & CFO Simulator” or rename to “Commercial Execution Simulator” if preferred)
+Copy:
+Simulation tools that compress learning: planning vs execution reality, incentives, governance, and financial outcomes.
 
----
+Meta:
+Decision rights • Controls • Execution reality
 
-### Case study tiles (3 items)
+### Project 3 Title (rename “Ad-Hoc Assignments” to “Field Work”)
+Copy:
+Targeted analyses and rapid diagnostics for teams who need the truth quickly — and need it to tie to real postings and outcomes.
 
-**Case 1**
-
-* **Title:**
-  `Trade spend rescue for global CPGs`
-
-* **Body:**
-  `Resolved demand-plan integration issues and a stalled S&OP cycle. Conducted triage, rebuilt cross-functional workflows, and rationalized dashboards. Outcome: faster planning cycles and improved budget accuracy.`
-
----
-
-**Case 2**
-
-* **Title:**
-  `Revenue planning (RGM) reset`
-
-* **Body:**
-  `Resolved disconnected inputs, missed deadlines, and misaligned KPIs by restoring a single source of truth and redesigning scenarios. Trained the GTM organization. Outcome: better planning hit rates and higher adoption across Sales and Finance.`
+Meta:
+Diagnostics • Stabilization • Governance
 
 ---
 
-**Case 3**
-
-* **Title:**
-  `Business school curriculum`
-
-* **Body:**
-  `Created a GPT-powered simulation to teach tradeoffs, equity, and budget constraints, used by students and professionals alike. Outcome: measurable improvements in engagement, confidence, and policy literacy.`
+## Footer
+- Replace footer sentence “process-first consulting.” with:
+  “commercial execution systems advisory.”
+- Ensure CTA link exists in footer links if there’s room (optional). Keep ANSI footer art as-is.
 
 ---
 
-## 🔹 ABOUT PAGE (`about.html`)
+## work.html (NEW — required; keep site style)
+H1:
+Work
 
-### Title
+Intro:
+Commercial execution is a system of systems — contracts, workflows, data flows, and incentives. We stabilize commercial execution platforms and enforce economic integrity so outcomes show up in the P&L and balance sheet without theatrics.
 
-* **Page title:**
-  `About Doppler/Edward`
+Include this canonical one-liner:
+Because system integrators configure software — we validate that commercial contracts, system logic, and financial outcomes are economically aligned.
 
----
+Include SAP-adjacent clarifier:
+We are SAP-adjacent: we validate the commercial logic, governance, and data flows ERP-centric stacks depend on — not generic ERP implementation.
 
-### Intro paragraph
+Add three service blocks (short, scannable; match existing card styles if possible):
+1) Deployment Rescue & Post-Go-Live Stabilization
+2) Trade Governance & Margin Integrity (Retainer)
+3) End-to-End Commercial Finance Systems Validation
 
-* **Intro text:**
-  `We’re focused on making systems work for the businesses that buy them. Period.`
-
----
-
-### “What we believe” section
-
-* **Section heading:**
-  `What we believe`
-
-* **Bullet list:**
-
-  * `Technology should follow process—not the other way around.`
-  * `Pragmatic AI can accelerate work, but only when it’s grounded in real constraints.`
-  * `Most “digital transformations” fail because teams weren’t enabled and trained, and workflows weren’t designed for digital solutions.`
-  * `Measurements matter—clarity beats dashboards, and governance beats theater.`
+End CTA:
+Book a 30-minute diagnostic call (standard mailto)
 
 ---
 
-### Leadership section
+## blog.html (NEW — keep minimal)
+H1:
+Blog
 
-* **Subheading:**
-  `Leadership`
+Intro:
+Essays and field notes on commercial execution systems — written for people running trade spend, pricing, and planning inside ERP-centric reality.
 
-* **Name + title:**
-  `Joshua Dopkowski`
-  `Founder & Principal Consultant`
+Add 3 placeholder post cards:
+1) The Allowance Shock Test: a CFO’s early warning signal
+2) List price is fiction: the waterfall is reality
+3) Post go-live is where the truth begins
 
-* **Bio paragraph:**
-  `Expertise in financial software deployment (FP&A, RGM) with international experience in program leadership, systems integration, and change management. Specialist in ERP→Cloud migration, financial process automation, and training Finance, GTM, and IT teams. Delivered pan-EU programs for major clients.`
-
----
-
-### Core capabilities section
-
-* **Section heading:**
-  `Core capabilities`
-
-* **Bullet list:**
-
-  * `FP&A modeling & scenario design`
-  * `Revenue & promotional planning and evaluation`
-  * `Trade spend optimization & trade contracts`
-  * `GenAI / agent prototyping`
-  * `Post-SaaS rollout rescue & triage`
-  * `KPI / controls design & governance`
-  * `Vendor fit analysis & integration oversight`
-  * `Enablement & workflow rebuilding`
+End CTA:
+Book a 30-minute diagnostic call (standard mailto)
 
 ---
 
-### Contact line
+## rgm.html
+Keep page theme. Add a short intro at top:
+We write about Revenue Growth Management as part of a larger commercial execution system — where contracts, execution, and finance must tell the same story.
 
-* **Text:**
-  `Contact: joshua@doppleredward.com`
-
----
-
-## 🔹 ADVOCACY PAGE (`advocacy.html`)
-
-### Title
-
-* **Page title:**
-  `Public-interest work`
+Add a link to Blog: /blog.html
 
 ---
 
-### Intro
-
-* **Intro text:**
-  `Technical grit + design culture + policy literacy. Hover the art for the manifesto.`
-
----
-
-### Manifesto block (under ANSI art)
-
-* **Headline:**
-  `OPEN TEACHING TOOLS`
-  `We make budgets, tradeoffs, and risk understandable.`
-
-  `RESPONSIBLE AI`
-  `Prompts-as-procedures. Transparency. Auditability.`
-
-  `POLICY LITERACY & INCOME SECURITY`
-  `Household resilience over theater. Equity over hype.`
-
-*(Keep the line breaks as above if you’re using this inside a tooltip/overlay.)*
+## about.html
+Add/ensure SAP-adjacent clarifier exists.
+Shift language to “we” consistently if any “I” appears.
 
 ---
 
-### Buttons / links under manifesto
-
-* `Rip this art`
-* `Collaborate`
-
----
-
-### “Why it matters” section
-
-* **Section heading:**
-  `Why it matters`
-
-* **Bullet list (or short paragraphs):**
-
-  * `Open tools that demystify budgets and tradeoffs.`
-  * `Responsible AI that’s legible and auditable.`
-  * `Policy literacy aimed at income security and civic resilience.`
-
----
-
-### Advocacy snapshots section
-
-* **Section heading:**
-  `Advocacy snapshots`
-
-**Item 1**
-
-* **Title:**
-  `UBI Classroom Lab`
-* **Body:**
-  `Hands-on module modeling guaranteed income, shocks, and stabilization effects for students and community groups.`
-* **Tagline:**
-  `Education · Macroecon literacy`
-
----
-
-**Item 2**
-
-* **Title:**
-  `Equity-First Financing Brief`
-* **Body:**
-  `Why future SMEs should raise via equity and revenue sharing over debt—mechanics, term templates, and risk tradeoffs.`
-* **Tagline:**
-  `Policy · Capital design`
-
----
-
-**Item 3**
-
-* **Title:**
-  `Worker Profit-Sharing Toolkit`
-* **Body:**
-  `Operational guide to implement profit-sharing on steroids: data flows, guardrails, and payout governance.`
-* **Tagline:**
-  `Workforce · Implementation`
-
----
-
-**Item 4**
-
-* **Title:**
-  `Public-Interest Simulator`
-* **Body:**
-  `GPT-powered simulator teaching budgets and constraints—no hand-waving, measurable learning outcomes.`
-* **Tagline:**
-  `Open teaching tools`
-
----
-
-### Call-to-action link
-
-* `Pitch a project`
-
----
-
-## 🔹 RGM PAGE (`rgm.html`)
-
-### Title
-
-* **Page title:**
-  `Revenue Growth Management (RGM)`
-
----
-
-### Intro paragraph
-
-* **Intro text:**
-  `Helping CPG companies find real value from trade promotion (TPM) and revenue management (RGM) systems.`
-
----
-
-### Our expertise section
-
-* **Section heading:**
-  `Our expertise`
-
-* **Lead paragraph:**
-  `We have hands-on experience deploying, rescuing, and evaluating leading RGM and TPM platforms, including solutions such as Visualfabriq, SAP TM, UpClear, and others.`
-
-* **Bullet list:**
-
-  * `Finance–Sales alignment through technology and process design`
-  * `RGM / TPM / FP&A project rationalization, fit-gap analysis, and risk assessment`
-  * `Gross-to-net and “pricing waterfall” setup and interpretation`
-  * `Vendor fit analysis across the RGM landscape`
-  * `Functional assessment of TPM & RGM tool capabilities and limits`
-  * `Integration design with major ERP systems and data lakes`
-  * `API-driven mashups between ERP and analytics engines`
-  * `Post-rollout triage and remediation of underperforming implementations`
-  * `UAT pre-flight checklists and Hypercare game plans for efficient handover`
-  * `IT infrastructure assessments for pre-project vetting`
-
----
-
-### How we work section
-
-* **Section heading:**
-  `How we work`
-
-* **Body paragraph:**
-  `Doppler/Edward is process-first. We help clients understand where SaaS tools genuinely add value, and where data, process, or functionality gaps need fixing first. We bring battle-tested experience across global CPG, with a sharp eye for separating vendor promises from what actually works in-market.`
-
----
-
-
-### 2026-01-08 narrative update
-
-* Elevated Trade Governance Architecture across home, work, rgm, about, team, and redline pages.
-* Added the enforcement-layer loop and proof hook on the RGM page.
-* Inserted the Trade Governance section, client environments line, and tightened trade control language on Work.
-* Unified primary CTA email to `sysop@doppleredward.com` and set the home capability grid to 2x2.
+## advocacy.html and team.html (ANSI)
+Keep layout. Add one short bridge paragraph at top if not present:
+Advocacy: systems shape outcomes; our work focuses on governance and economic integrity.
+ANSI: craft matters; this is a nod to early digital culture; not a services page.
