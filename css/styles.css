@@ -1260,6 +1260,32 @@ body.home-page {
   letter-spacing: 0.3px;
 }
 
+/* Home hero: command-briefing typography */
+.home-hero .hero-content { max-width: 72ch; }
+
+.home-hero .hero-content .lead{
+  font-size: clamp(1.15rem, 1.0rem + 0.9vw, 1.7rem);
+  line-height: 1.35;
+  margin: 0 0 0.9em 0;
+}
+
+.home-hero .hero-content .specialty-line{
+  font-size: clamp(1.05rem, 0.95rem + 0.7vw, 1.35rem);
+  line-height: 1.55;
+  margin: 0;
+  text-shadow: 0 1px 10px rgba(0,0,0,0.65);
+}
+
+.home-hero .hero-content h1{
+  margin-bottom: 0.4em;
+  letter-spacing: 0.02em;
+}
+
+.home-hero .hero-content .hero-link{
+  margin-top: 1.1em;
+  font-weight: 600;
+}
+
 .home-wrap {
   max-width: 1200px;
 }
