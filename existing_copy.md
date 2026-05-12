@@ -8,7 +8,7 @@ Use this file to review, edit, and cut copy. Mark changes here; implement in HTM
 ## GLOBAL ELEMENTS (repeated on every page)
 
 ### Navigation (top bar, left → right)
-Work · About · RGM/TPM · Blog · Projects ▾ · [Book a 30-minute diagnostic call]
+Work · About · RGM/TPM · Blog · Projects ▾ · [Contact Joshua]
 
 **Projects dropdown:**
 - Redline Sim
@@ -16,12 +16,12 @@ Work · About · RGM/TPM · Blog · Projects ▾ · [Book a 30-minute diagnostic
 - ANSI Art Gallery
 
 ### CTA Button
-Book a 30-minute diagnostic call
-`mailto:sysop@doppleredward.com?subject=30-minute%20Diagnostic%20Call`
+Contact Joshua
+`mailto:joshua@doppleredward.com?subject=30-minute%20Diagnostic%20Call`
 
 ### Footer tagline
 doppler/edward — commercial execution systems advisory.
-`sysop@doppleredward.com`
+`joshua@doppleredward.com`
 
 ### Footer links
 Work · Blog · About · Advocacy
@@ -65,7 +65,7 @@ We are SAP-adjacent: we validate the commercial logic, governance, and data flow
 
 **Hero buttons:**
 - See our work → /work.html
-- Book a 30-minute diagnostic call → mailto CTA
+- Contact Joshua → mailto CTA
 
 ---
 
@@ -255,7 +255,7 @@ Focused interventions for specific rescues, audits, or deployments (typically 3�
 Fixed-fee Functional Due Diligence for Board / PE acquisitions and major platform decisions.
 
 **End CTA:** Have a messy system or a fragile transformation?
-→ Book a 30-minute diagnostic call
+→ Contact Joshua
 
 ---
 
@@ -330,7 +330,7 @@ He brings international experience in program leadership, systems integration, a
 - Vendor fit analysis, selection, and integration oversight
 - Training, enablement, and cross-functional workflow rebuilding
 
-Contact: sysop@doppleredward.com
+Contact: joshua@doppleredward.com
 
 ---
 
@@ -359,7 +359,7 @@ Doppler/Edward exists to own that system.
 We close the gap between glossy solutions and ugly business reality. We don't "implement & deploy"; we:
 - Rescue broken RGM workflows.
 - Align warring Finance and Sales/Category teams.
-- Turn tools like XTEL, Visualfabriq, SAP, and UpClear into actual levers of revenue and margin — not expensive reporting machines.
+- Turn tools like RGM platforms, Visualfabriq, SAP, and adjacent commercial systems into actual levers of revenue and margin — not expensive reporting machines.
 
 For boards and sponsors, the question is simple: Is RGM compounding enterprise value or quietly leaking it?
 
@@ -475,7 +475,7 @@ Coming soon.
 Coming soon.
 *Meta: Deployment rescue • Stabilization*
 
-**End CTA:** → Book a 30-minute diagnostic call
+**End CTA:** → Contact Joshua
 
 ---
 
@@ -492,8 +492,8 @@ Redline — Doppler/Edward
 **Status badges:** STATUS: IN DEVELOPMENT · PILOT PARTNERS WANTED
 
 **Hero CTAs:**
-- Request Demo → `mailto:sysop@doppleredward.com?subject=REDLINE - Request Demo`
-- Discuss Pilot / Investment → `mailto:sysop@doppleredward.com?subject=REDLINE - Pilot Discussion`
+- Request Demo → `mailto:joshua@doppleredward.com?subject=REDLINE - Request Demo`
+- Discuss Pilot / Investment → `mailto:joshua@doppleredward.com?subject=REDLINE - Pilot Discussion`
 
 ---
 
@@ -606,7 +606,7 @@ Use Redline to stress-test your FP&A, RGM, or commercial teams.
 Explore funding, co-development, or portfolio deployment.
 
 To discuss pilots, licensing, or investment:
-Subject line: REDLINE → `mailto:sysop@doppleredward.com?subject=REDLINE`
+Subject line: REDLINE → `mailto:joshua@doppleredward.com?subject=REDLINE`
 
 ---
 
@@ -636,7 +636,7 @@ Household resilience over theater. Equity over hype.
 
 **Buttons:**
 - Rip this art (download)
-- Collaborate → mailto:sysop@doppleredward.com
+- Collaborate → mailto:joshua@doppleredward.com
 
 ---
 
@@ -666,7 +666,7 @@ Operational guide to implement profit-sharing on steroids: data flows, guardrail
 GPT-powered simulator teaching budgets and constraints — no hand-waving, measurable learning outcomes.
 *Meta: Open teaching tools*
 
-**End CTA:** Pitch a project → mailto:sysop@doppleredward.com
+**End CTA:** Pitch a project → mailto:joshua@doppleredward.com
 
 ---
 
