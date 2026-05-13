@@ -230,7 +230,7 @@ const DATA = {
           where: "Lyon, France",
           dates: "2022–Present",
           value: [
-            "Redline Simulator — FP&A & Sales Enablement game.",
+            "FP&A Simulator — FP&A & Sales Enablement game.",
             "Mister Donkey — irreverent weather bot that actually helps.",
             "Lightweight AI apps for revenue planning and reporting cycles.",
           ],
