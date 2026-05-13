@@ -3,162 +3,390 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Joshua Dopkowski - Advisor in RGM, TPM/TPO, Trade Governance & ERP-Centric Commercial Execution</title>
-  <meta name="description" content="Joshua Dopkowski is an Advisor focused on RGM, TPM/TPO, trade governance, contract-to-cash execution, and ERP-centric commercial finance for CPG and FMCG environments." />
-  <link rel="icon" href="favicon/favicon.ico">
-  <link rel="stylesheet" href="css/portfolio-light.css" />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <title>Joshua Dopkowski — Advisor in Commercial Systems, Teaching, Strategy &amp; Build Studio</title>
+  <meta name="description" content="Joshua Dopkowski is an Advisor based in Lyon, France. His work spans commercial systems delivery, CPG ERP, RGM / TPM / TPO, teaching and facilitation, strategy and governance, applied AI, simulation, and practical build work." />
+  <link rel="icon" href="/favicon/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/portfolio-light.css" />
 </head>
 <body>
+
+  <!-- ===== HEADER / NAV ===== -->
   <header class="site-header">
     <div class="nav">
       <a class="brand" href="/">
-        <img class="brand-logo" src="/assets/img/header_logo_banner.png" alt="Doppler/Edward">
+        <img class="brand-logo" src="/assets/img/header_logo_banner.png" alt="Doppler/Edward" />
       </a>
-      <button class="hamburger" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button class="hamburger" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <nav class="links">
         <a href="/" aria-current="page">Home</a>
-        <a href="/experience.html">Experience</a>
-        <a href="/expertise.html">Expertise</a>
-        <a href="/teaching.html">Teaching</a>
-        <a href="/portfolio.html">Portfolio</a>
-        <a href="/writing.html">Writing</a>
-        <a href="/about.html">About</a>
+        <a href="/commercial-systems.html">Systems &amp; Execution</a>
+        <a href="/education-training.html">Teaching &amp; Facilitation</a>
+        <a href="/strategy-governance.html">Strategy &amp; Governance</a>
+        <a href="/build-studio.html">Build Studio</a>
         <div class="has-sub">
           <a class="parent" href="#">Projects</a>
           <div class="submenu">
-            <a href="/rgm.html">RGM/TPM</a>
-            <a href="/redline.html">Redline Sim</a>
-            <a href="/team.html">ANSI Art Gallery</a>
+            <a href="/fpa-simulator.html">FP&amp;A Simulator</a>
+            <a href="/mister-donkey.html">Mister Donkey</a>
+            <a href="/global-ai.html">Global AI</a>
+            <a href="/advocacy.html">Advocacy &amp; Resilience</a>
           </div>
         </div>
-        <a href="/contact.html">Contact / CV</a>
-        <!-- TODO: Add assets/docs/Joshua_Dopkowski_CV.pdf when final CV is available. -->
-        <a class="btn accent" href="/assets/docs/Joshua_Dopkowski_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/team.html">ANSI Art Gallery</a>
+        <!-- TODO: add Joshua_Dopkowski_CV.pdf to /assets/docs/ -->
+        <a class="btn cv-btn" href="/assets/docs/Joshua_Dopkowski_CV.pdf" target="_blank" rel="noopener">Download CV</a>
       </nav>
     </div>
   </header>
 
   <main>
+
+    <!-- ===== 1. HERO ===== -->
     <section class="page-hero">
       <div class="wrap hero-grid">
         <div>
-          <span class="eyebrow">Advisor - RGM / TPM-TPO / Trade Governance / ERP-Centric Commercial Execution</span>
+          <span class="eyebrow">Advisor</span>
           <h1>Joshua Dopkowski</h1>
-          <p class="lead">I help organizations close the gap between commercial intent, system design, and financial outcomes.</p>
-          <p class="lead">Commercial strategy only matters if the enterprise can execute it. A promotion, customer agreement, pricing decision, or funding rule has to survive master data, platform configuration, ERP logic, accruals, claims, deductions, settlement, and the P&L.</p>
+          <p class="hero-subtitle">Systems &amp; Execution · Teaching &amp; Facilitation · Strategy &amp; Governance · Build Studio</p>
+          <p class="lead">I help organizations turn commercial intent into working systems, governed decisions, and practical tools people can use.</p>
           <div class="hero-actions">
+            <!-- TODO: add Joshua_Dopkowski_CV.pdf to /assets/docs/ -->
             <a class="btn accent" href="/assets/docs/Joshua_Dopkowski_CV.pdf" target="_blank" rel="noopener">Download CV</a>
-            <a class="btn" href="/experience.html">View Experience</a>
-            <a class="btn" href="/portfolio.html">Explore Portfolio</a>
-            <a class="btn" href="mailto:joshua@doppleredward.com">Contact</a>
+            <a class="btn" href="#pillars">Explore the Four Pillars</a>
+            <a class="btn" href="mailto:joshua@doppleredward.com">Contact Joshua</a>
           </div>
         </div>
         <aside class="hero-stack">
-          <!-- TODO: replace with generated hero image at /assets/img/joshua-hero.jpg -->
-          <div class="hero-visual image-placeholder">
-            <div class="placeholder-content">
-              <p class="kicker">Image forthcoming</p>
-              <strong>Commercial intent, system behavior, financial outcomes.</strong>
-              <span>/assets/img/joshua-hero.jpg</span>
-            </div>
-          </div>
-          <div class="hero-panel">
-            <p class="kicker">Core thesis</p>
-            <h2>Commercial intent must survive the enterprise.</h2>
-            <p>That is where I work: between Sales, Finance, IT, Operations, vendors, and executives when everyone is using the same words but meaning different things.</p>
+          <div class="img-placeholder hero-img-placeholder">
+            <span class="ph-label">/assets/img/joshua-hero.jpg</span>
           </div>
         </aside>
       </div>
     </section>
 
-    <section class="section">
+    <!-- ===== 2. EVIDENCE BAR ===== -->
+    <section class="evidence-bar" aria-label="Key proof points">
       <div class="wrap">
-        <div class="stats">
-          <div class="stat"><strong>20+ Years</strong><span>Commercial, finance, CPG, systems, education, and product-building experience.</span></div>
-          <div class="stat"><strong>$394M</strong><span>Direct commercial finance responsibility within L'Oreal's SalonCentric operation.</span></div>
-          <div class="stat"><strong>330+ bps</strong><span>Gross margin recovery through trade governance, claims automation, and Gross-to-Net discipline.</span></div>
-          <div class="stat"><strong>24 Markets</strong><span>RGM / TPM / commercial execution work across North America, Europe, the Middle East, and Africa.</span></div>
+        <div class="stat-block reveal">
+          <span class="stat-num" data-count="20" data-display="20+">20+</span>
+          <span class="stat-desc">Commercial, finance, CPG, education, systems, and product-building experience.</span>
+        </div>
+        <div class="stat-block reveal reveal-delay-1">
+          <span class="stat-num" data-count="394" data-display="$394M">$394M</span>
+          <span class="stat-desc">Commercial finance responsibility within L'Oréal / SalonCentric.</span>
+        </div>
+        <div class="stat-block reveal reveal-delay-2">
+          <span class="stat-num" data-count="330" data-display="330+">330+</span>
+          <span class="stat-desc stat-bps">bps gross margin recovery through trade governance, claims automation, ERP alignment, and Gross-to-Net discipline.</span>
+        </div>
+        <div class="stat-block reveal reveal-delay-3">
+          <span class="stat-num" data-count="24" data-display="24">24</span>
+          <span class="stat-desc">Markets — commercial execution and software deployment across North America, Europe, the Middle East, and Africa.</span>
         </div>
       </div>
     </section>
 
-    <section class="section soft">
+    <!-- ===== 3. PERSONAL INTRO ===== -->
+    <section class="personal-intro section">
       <div class="wrap">
-        <div class="section-header">
-          <span class="eyebrow">Operating layer</span>
-          <h2>I work where commercial decisions become operational reality.</h2>
-          <p>My background spans CPG finance leadership, multi-market RGM and TPM/TPO deployments, SAP-centered commercial execution, trade governance, FP&A education, applied AI, and product-building. The common thread is translation.</p>
-        </div>
-        <div class="grid four">
-          <article class="card"><p class="kicker">01</p><h3>Commercial Execution & Trade Governance</h3><p>Decision rights, approval controls, trade spend governance, promotional funding logic, auditability, and financial accountability.</p></article>
-          <article class="card"><p class="kicker">02</p><h3>RGM / TPM / TPO Deployment Advisory</h3><p>Readiness, fit/gap, design validation, UAT, defect triage, cutover, hypercare, and post-go-live stabilization.</p></article>
-          <article class="card"><p class="kicker">03</p><h3>Contract-to-Cash & ERP-Centric Finance</h3><p>Pricing conditions, promotional mechanics, funding rules, accruals, claims, deductions, settlement, and revenue recognition.</p></article>
-          <article class="card"><p class="kicker">04</p><h3>Teaching, Simulation & Applied AI</h3><p>Finance education, Python-based learning tools, controlled GenAI workflows, and Redline Simulator.</p></article>
-        </div>
+        <p class="intro-text reveal">My work has moved across functions, industries, and environments: product development, commercial finance, trade governance, CPG software deployment, teaching, research, applied AI, and hands-on digital builds. The useful pattern across all of it is the role I repeatedly play inside complicated systems: translator, operator, facilitator, advisor, builder.</p>
+        <p class="intro-text reveal reveal-delay-1">The four pillars below are the organized version of that pattern.</p>
       </div>
     </section>
 
-    <section class="section">
+    <!-- ===== 4. THROUGHLINE SKILLS ===== -->
+    <section class="skills-strip" aria-label="Throughline skills">
       <div class="wrap">
-        <div class="section-header">
-          <span class="eyebrow">Selected proof</span>
-          <h2>Credibility from inside the machinery.</h2>
+        <div class="section-header reveal">
+          <span class="eyebrow">Throughline skills</span>
+          <h2>Capabilities that run across all four pillars</h2>
+          <p>These are not separate services. They are the operating layer underneath the work.</p>
         </div>
-        <div class="grid two">
-          <article class="card"><h3>Margin Recovery - L'Oreal / SalonCentric</h3><p>Governed trade finance and promotional execution for a $394M business unit. Rebuilt trade governance, automated claims and promotional finance workflows, strengthened ERP alignment, and contributed to 330+ basis points of gross margin recovery over three years.</p><div class="tag-list"><span class="tag">Commercial Finance</span><span class="tag">SAP</span><span class="tag">Gross-to-Net</span></div></article>
-          <article class="card"><h3>Multi-Market RGM / TPM Deployment Work</h3><p>Worked across 24 markets in complex RGM and TPM/TPO environments, supporting enterprise deployments and stabilization work for Tier 1 CPG clients including Nestle, Mars, Haleon, and Deoleo.</p><div class="tag-list"><span class="tag">RGM</span><span class="tag">TPM/TPO</span><span class="tag">Hypercare</span></div></article>
-          <article class="card"><h3>Private Equity & Platform Advisory</h3><p>Provided advisory input and functional due diligence for private equity and consulting teams evaluating enterprise commercial execution, RGM, TPM, FP&A, and SaaS platform environments.</p><div class="tag-list"><span class="tag">Due Diligence</span><span class="tag">Platform Assessment</span></div></article>
-          <article class="card"><h3>Applied Finance Education & Product Building</h3><p>Taught finance, financial markets, FP&A, marketing, consumer behavior, and digital systems. Built coursework integrating analytics, systems thinking, AI, ERP logic, and practical financial decision-making.</p><div class="tag-list"><span class="tag">FP&A</span><span class="tag">AI</span><span class="tag">Simulation</span></div></article>
-        </div>
-        <div class="visual-band">
-          <div class="soft-panel">
-            <p class="kicker">Portfolio signal</p>
-            <h3>Systems thinking made visible.</h3>
-            <p>Future visual direction can carry the same idea as the site: a warm, precise map of commercial decisions moving through people, platforms, controls, and financial outcomes.</p>
-          </div>
-          <!-- TODO: replace with generated supporting image at /assets/img/portfolio-systems-placeholder.jpg -->
-          <div class="image-placeholder">
-            <div class="placeholder-content">
-              <p class="kicker">Image forthcoming</p>
-              <strong>Portfolio systems visual.</strong>
-              <span>/assets/img/portfolio-systems-placeholder.jpg</span>
+        <div class="skills-grid">
+
+          <div class="skill-card reveal" tabindex="0" aria-describedby="tooltip-1">
+            <h3>Translation &amp; Liaison</h3>
+            <div class="skill-tooltip" id="tooltip-1" role="tooltip">
+              Between what was said and what was understood. Between commercial intent and system design. Between technical findings and strategic implications. Between functions that use the same words but mean different things — Finance, Sales, IT, Operations, vendors, executives, students, and clients.
             </div>
           </div>
+
+          <div class="skill-card reveal reveal-delay-1" tabindex="0" aria-describedby="tooltip-2">
+            <h3>Writing, Speaking &amp; Presenting</h3>
+            <div class="skill-tooltip" id="tooltip-2" role="tooltip">
+              Complex ideas communicated clearly in written, verbal, and visual form. Equally comfortable writing a governance framework, leading a client workshop, teaching a finance class, or presenting to a board. Strong at distilling dense material into language people can actually use.
+            </div>
+          </div>
+
+          <div class="skill-card reveal reveal-delay-2" tabindex="0" aria-describedby="tooltip-3">
+            <h3>Critical Thinking &amp; Problem Solving</h3>
+            <div class="skill-tooltip" id="tooltip-3" role="tooltip">
+              Pattern recognition in systems under pressure. Finding where a problem is actually located — data, process, incentive, configuration, adoption, or commercial logic — before attempting to fix the wrong thing. The goal is an accurate diagnosis, not a convenient explanation.
+            </div>
+          </div>
+
+          <div class="skill-card reveal reveal-delay-3" tabindex="0" aria-describedby="tooltip-4">
+            <h3>Creativity &amp; Communication</h3>
+            <div class="skill-tooltip" id="tooltip-4" role="tooltip">
+              Creativity as a practical operating skill: naming problems clearly, designing better learning environments, building useful tools, making complex systems visible, and keeping people engaged long enough to understand the work.
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <section class="section soft">
+    <!-- ===== 5. FOUR PILLARS CONNECTION FRAME ===== -->
+    <section class="pillars-frame section soft" id="pillars" aria-label="Four pillars overview">
       <div class="wrap">
-        <div class="section-header">
-          <span class="eyebrow">Ways to work</span>
-          <h2>Senior roles, focused advisory, teaching, and applied education.</h2>
-        </div>
-        <div class="grid">
-          <article class="card"><h3>Senior Roles</h3><p>Advisor, Solution Advisor, Commercial Execution Lead, RGM / TPM Lead, Commercial Finance Lead, Trade Governance Lead, and related senior individual-contributor or leadership roles.</p></article>
-          <article class="card"><h3>Interim / Project Advisory</h3><p>Structured advisory for failed or stalled deployments, readiness assessment, post-go-live stabilization, commercial logic review, vendor-client misalignment, or platform due diligence.</p></article>
-          <article class="card"><h3>Teaching & Workshops</h3><p>Practical education around FP&A, RGM, trade governance, ERP-centered execution, AI in business, and decision-making under constraint.</p></article>
-        </div>
-        <div class="cta-band">
-          <h2>Want the full picture?</h2>
-          <p>A traditional CV can show the timeline. This site shows the operating system behind it.</p>
-          <div class="actions">
-            <a class="btn accent" href="/assets/docs/Joshua_Dopkowski_CV.pdf" target="_blank" rel="noopener">Download CV</a>
-            <a class="btn" href="/experience.html">View Experience</a>
-            <a class="btn" href="mailto:joshua@doppleredward.com">Contact Joshua</a>
+        <p class="pillars-frame-intro reveal">
+          The same underlying challenge — commercial intent not connecting to actual outcomes — can be addressed from four angles. These are four modes of engagement, not four separate practices. Most engagements touch more than one. The entry point is wherever the problem lives.
+        </p>
+        <div class="pillars-2x2 reveal">
+          <div class="quad">
+            <span class="quad-mode">Functional · Tactical</span>
+            <h3>Systems &amp; Execution</h3>
+            <p>Inside the system, doing the work.</p>
+          </div>
+          <div class="quad">
+            <span class="quad-mode">Leadership · Relationships</span>
+            <h3>Teaching &amp; Facilitation</h3>
+            <p>Developing people and teams.</p>
+          </div>
+          <div class="quad">
+            <span class="quad-mode">Strategic · Advisory</span>
+            <h3>Strategy &amp; Governance</h3>
+            <p>Advising at the decision-making level.</p>
+          </div>
+          <div class="quad">
+            <span class="quad-mode">Technical · Innovation</span>
+            <h3>Build Studio</h3>
+            <p>Creating new tools and artifacts.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ===== 6. FOUR PILLAR CARDS ===== -->
+    <section class="pillars-section" aria-label="Four pillar cards">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <span class="eyebrow">Four pillars</span>
+          <h2>Four modes of engagement</h2>
+          <p>Hover or focus each card to see the detail. Click through to the full pillar page.</p>
+        </div>
+        <div class="pillar-cards-grid">
+
+          <!-- Card 1: Systems & Execution -->
+          <article class="pillar-card reveal" tabindex="0">
+            <span class="mode-tag">Functional · Tactical</span>
+            <h3>Systems &amp; Execution</h3>
+            <p class="card-front-text">I work inside commercial software environments: configuring, testing, validating, and stabilizing the logic between commercial intent and system behavior.</p>
+            <div class="card-hover-content">
+              <ul>
+                <li>RGM / TPM / TPO configuration and validation</li>
+                <li>ERP posting logic and integration</li>
+                <li>Fit/gap assessment and design validation</li>
+                <li>SIT / UAT / cutover / hypercare</li>
+                <li>Post-go-live stabilization and rescue</li>
+              </ul>
+            </div>
+            <a class="card-link" href="/commercial-systems.html">Explore Systems &amp; Execution</a>
+          </article>
+
+          <!-- Card 2: Teaching & Facilitation -->
+          <article class="pillar-card reveal reveal-delay-1" tabindex="0">
+            <span class="mode-tag">Leadership · Relationships</span>
+            <h3>Teaching &amp; Facilitation</h3>
+            <p class="card-front-text">I design and deliver practical learning, and help organizations build the human capability to understand, govern, and improve complex systems.</p>
+            <div class="card-hover-content">
+              <ul>
+                <li>Finance and FP&amp;A teaching</li>
+                <li>Workshop facilitation</li>
+                <li>Change management and enablement</li>
+                <li>Curriculum design</li>
+                <li>Team coaching and capability building</li>
+              </ul>
+            </div>
+            <a class="card-link" href="/education-training.html">Explore Teaching &amp; Facilitation</a>
+          </article>
+
+          <!-- Card 3: Strategy & Governance -->
+          <article class="pillar-card reveal reveal-delay-2" tabindex="0">
+            <span class="mode-tag">Strategic · Advisory</span>
+            <h3>Strategy &amp; Governance</h3>
+            <p class="card-front-text">I help leaders and investors connect tactical execution to strategic implications — governance, reporting, financial accountability, risk, and value creation.</p>
+            <div class="card-hover-content">
+              <ul>
+                <li>Trade governance framework design</li>
+                <li>Commercial execution due diligence</li>
+                <li>FP&amp;A-oriented business analysis</li>
+                <li>Risk identification and vendor interrogation</li>
+                <li>Board and executive communication</li>
+              </ul>
+            </div>
+            <a class="card-link" href="/strategy-governance.html">Explore Strategy &amp; Governance</a>
+          </article>
+
+          <!-- Card 4: Build Studio -->
+          <article class="pillar-card reveal reveal-delay-3" tabindex="0">
+            <span class="mode-tag">Technical · Innovation</span>
+            <h3>Build Studio</h3>
+            <p class="card-front-text">I build practical tools, prototypes, simulations, and digital assets that help people understand decisions, test ideas, and move faster.</p>
+            <div class="card-hover-content">
+              <ul>
+                <li>FP&amp;A simulation design</li>
+                <li>AI-enabled learning tools</li>
+                <li>Python-based prototypes and automation</li>
+                <li>API-connected applications</li>
+                <li>Practical web and content systems</li>
+              </ul>
+            </div>
+            <a class="card-link" href="/build-studio.html">Explore Build Studio</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 7. CAREER EVIDENCE CARDS ===== -->
+    <section class="evidence-section section soft" aria-label="Career evidence">
+      <div class="wrap">
+        <div class="section-header reveal">
+          <span class="eyebrow">Career evidence</span>
+          <h2>Where the work actually happened</h2>
+          <p>A compact map of the roles and environments that underpin the four pillars.</p>
+        </div>
+        <div class="evidence-cards-grid">
+
+          <!-- Card 1 -->
+          <article class="evidence-card reveal">
+            <p class="org-name">L'Oréal / SalonCentric</p>
+            <p class="role-title">Finance Director — Commercial Finance &amp; Trade Governance</p>
+            <p class="dates-loc">Oct 2015–Sep 2018 · Tampa Bay / New York / New Jersey</p>
+            <p class="headline">$394M direct P&amp;L · $1.1B channel operation · 330+ bps gross margin recovery · 7-person team built from scratch</p>
+            <div class="expand-detail">
+              <p>Built the trade governance function from zero to a governed, auditable operation. Simultaneous AP/AR settlement across four channel layers and six distribution centers.</p>
+            </div>
+            <div class="tag-pills">
+              <span class="tag-pill strategy">Strategy &amp; Governance</span>
+              <span class="tag-pill systems">Systems &amp; Execution</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="evidence-card reveal reveal-delay-1">
+            <p class="org-name">Visualfabriq — Client Delivery Environments</p>
+            <p class="role-title">Embedded Implementation Advisor — RGM &amp; TPM/TPO</p>
+            <p class="dates-loc">Dec 2022–May 2024 · Hybrid</p>
+            <p class="headline">24 markets · Nestlé · Mars · Haleon · Deoleo · North America, Europe, Middle East &amp; Africa</p>
+            <div class="expand-detail">
+              <p>Client-facing functional lead across multi-market RGM / TPM / TPO deployments — fit/gap, design validation, SIT, UAT, cutover, hypercare, and vendor-client alignment.</p>
+            </div>
+            <div class="tag-pills">
+              <span class="tag-pill systems">Systems &amp; Execution</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="evidence-card reveal reveal-delay-2">
+            <p class="org-name">Doppler/Edward</p>
+            <p class="role-title">Advisor</p>
+            <p class="dates-loc">May 2024–Present · Lyon, France</p>
+            <p class="headline">Independent advisory, commercial execution diagnostics, PE / investor due diligence support, applied AI, and product-building.</p>
+            <div class="expand-detail">
+              <p>Operating umbrella for independent work spanning all four pillars.</p>
+            </div>
+            <div class="tag-pills">
+              <span class="tag-pill all">All Four Pillars</span>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="evidence-card reveal reveal-delay-3">
+            <p class="org-name">Teaching — CEFAM / INSEEC / UCLY / USAC + emlyon business school</p>
+            <p class="role-title">Lecturer &amp; Researcher</p>
+            <p class="dates-loc">2018–2026 · Lyon, France</p>
+            <p class="headline">FP&amp;A · Financial markets · Marketing · Digital systems · AI in business education · Resilience research · Scenario planning</p>
+            <div class="expand-detail">
+              <p>Designed coursework integrating financial logic, analytics, AI, ERP behavior, and applied decision-making across multiple institutions and student cohorts.</p>
+            </div>
+            <div class="tag-pills">
+              <span class="tag-pill teaching">Teaching &amp; Facilitation</span>
+              <span class="tag-pill strategy">Strategy &amp; Governance</span>
+            </div>
+          </article>
+
+        </div>
+        <p style="margin-top:1.5rem; font-size:.9rem; color:var(--color-text-dim);">
+          Full career detail — EO Products, Estée Lauder / Clinique, Doppler Beverage Advisory, and more — in the <a href="/experience.html" style="color:var(--color-copper);">Experience Archive</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 8. PROJECTS STRIP ===== -->
+    <section class="projects-strip" aria-label="Projects">
+      <div class="wrap">
+        <h2 class="reveal">Projects</h2>
+        <div class="projects-row">
+          <a class="project-chip reveal" href="/fpa-simulator.html">FP&amp;A Simulator</a>
+          <a class="project-chip reveal reveal-delay-1" href="/mister-donkey.html">Mister Donkey</a>
+          <a class="project-chip reveal reveal-delay-2" href="/global-ai.html">Global AI</a>
+          <a class="project-chip reveal reveal-delay-3" href="/advocacy.html">Advocacy &amp; Resilience</a>
+          <a class="project-chip reveal reveal-delay-4" href="/team.html">ANSI Art Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 9. CONTACT CTA ===== -->
+    <section class="contact-cta section" aria-label="Contact">
+      <div class="wrap">
+        <h2 class="reveal">Get in touch</h2>
+        <p class="reveal reveal-delay-1">If the problem involves commercial execution, trade spend, ERP behavior, RGM / TPM systems, financial reporting, governance, or outcomes that no one can quite reconcile — send the note.</p>
+        <div class="actions reveal reveal-delay-2">
+          <a class="btn accent" href="mailto:joshua@doppleredward.com">Contact Joshua</a>
+          <!-- TODO: add Joshua_Dopkowski_CV.pdf to /assets/docs/ -->
+          <a class="btn" href="/assets/docs/Joshua_Dopkowski_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="btn" href="/experience.html">View Full Experience</a>
+        </div>
+        <p class="reveal reveal-delay-3" style="margin-top:1.5rem; font-size:.88rem; color:var(--color-text-dim);">
+          Lyon, France · <a href="mailto:joshua@doppleredward.com" style="color:var(--color-copper);">joshua@doppleredward.com</a>
+        </p>
+      </div>
+    </section>
+
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="footer-inner">
-      <span>Joshua Dopkowski - Doppler/Edward</span>
-      <span><a href="mailto:joshua@doppleredward.com">joshua@doppleredward.com</a></span>
+      <div class="footer-top">
+        <span class="footer-name">Joshua Dopkowski — Doppler/Edward</span>
+        <span class="footer-tagline">Advisor in commercial systems, teaching &amp; facilitation, strategy &amp; governance, and build studio work.</span>
+        <span class="footer-contact">Lyon, France · <a href="mailto:joshua@doppleredward.com">joshua@doppleredward.com</a></span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="/">Home</a>
+        <a href="/commercial-systems.html">Systems &amp; Execution</a>
+        <a href="/education-training.html">Teaching &amp; Facilitation</a>
+        <a href="/strategy-governance.html">Strategy &amp; Governance</a>
+        <a href="/build-studio.html">Build Studio</a>
+        <a href="/fpa-simulator.html">Projects</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/team.html">ANSI Art Gallery</a>
+        <!-- TODO: add Joshua_Dopkowski_CV.pdf to /assets/docs/ -->
+        <a href="/assets/docs/Joshua_Dopkowski_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      </nav>
+      <p class="footer-copy">&copy; Joshua Dopkowski / Doppler/Edward</p>
     </div>
   </footer>
-  <script src="js/site.js"></script>
+
+  <script src="/js/site.js"></script>
 </body>
 </html>

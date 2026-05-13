@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Systems &amp; Execution — Joshua Dopkowski</title>
+  <meta name="description" content="CPG ERP, RGM / TPM / TPO configuration and validation, functional design, deployment, post-go-live stabilization — Systems &amp; Execution pillar." />
+  <link rel="icon" href="/favicon/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/portfolio-light.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav">
+      <a class="brand" href="/"><img class="brand-logo" src="/assets/img/header_logo_banner.png" alt="Doppler/Edward" /></a>
+      <button class="hamburger" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="links">
+        <a href="/">Home</a>
+        <a href="/commercial-systems.html" aria-current="page">Systems &amp; Execution</a>
+        <a href="/education-training.html">Teaching &amp; Facilitation</a>
+        <a href="/strategy-governance.html">Strategy &amp; Governance</a>
+        <a href="/build-studio.html">Build Studio</a>
+        <div class="has-sub">
+          <a class="parent" href="#">Projects</a>
+          <div class="submenu">
+            <a href="/fpa-simulator.html">FP&amp;A Simulator</a>
+            <a href="/mister-donkey.html">Mister Donkey</a>
+            <a href="/global-ai.html">Global AI</a>
+            <a href="/advocacy.html">Advocacy &amp; Resilience</a>
+          </div>
+        </div>
+        <a href="/blog.html">Blog</a>
+        <a href="/team.html">ANSI Art Gallery</a>
+        <a class="btn cv-btn" href="/assets/docs/Joshua_Dopkowski_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="pillar-hero">
+      <div class="wrap">
+        <span class="mode-label">Functional · Tactical</span>
+        <h1>Systems &amp; Execution</h1>
+        <p class="subtitle">CPG ERP · RGM / TPM / TPO · Functional Design · Deployment · Stabilization</p>
+        <p class="mode-label" style="color:var(--color-text-dim); font-style:italic; text-transform:none; letter-spacing:0; font-weight:400;">The architecture and the mechanic.</p>
+        <p class="intro-copy">Commercial software only works when the business logic it encodes is actually correct. This pillar covers the functional and tactical layer: configuring commercial systems, validating that the design reflects what the business intended, aligning ERP behavior with commercial agreements, and resolving the failures that appear before, during, and after go-live. The work is hands-on. It requires knowing how promotional mechanics, pricing conditions, accrual logic, settlement paths, and ERP posting behavior interact — and being able to diagnose where they break and why.</p>
+      </div>
+    </section>
+
+    <div class="wrap">
+
+      <section class="content-section reveal">
+        <h2>RGM / TPM / TPO Configuration &amp; Validation</h2>
+
+        <h3>Promotion Configuration &amp; Commercial Logic</h3>
+        <p>Confirm the system accurately reflects commercial behavior by configuring and testing:</p>
+        <ul>
+          <li>Customer and product hierarchies</li>
+          <li>Pricing conditions mapping and reporting</li>
+          <li>Pricing waterfall integrity</li>
+          <li>Off-invoice promotional allowances setup</li>
+          <li>Lump-sum vs variable funding configuration</li>
+          <li>Customer-specific promotion mechanics</li>
+          <li>Three-way match mapping with ERP</li>
+          <li>Contract clause to configuration rule alignment</li>
+        </ul>
+
+        <h3>Settlement Action Mapping</h3>
+        <p>Ensure settlement actions are correctly configured and functioning across promotion types and commercial scenarios:</p>
+        <ul>
+          <li>Billback / chargeback / rebate configuration</li>
+          <li>Timing issues affecting budget (e.g. early payment discount windows)</li>
+          <li>Debit / credit memo generation and posting</li>
+          <li>Missing settlement action identification</li>
+          <li>Commercial intent and system logic alignment</li>
+          <li>Settlement path diagnosis</li>
+          <li>Promotion-to-settlement rule alignment</li>
+          <li>Exception scenario mapping</li>
+        </ul>
+
+        <h3>Accrual Logic Testing</h3>
+        <p>Test accrual generation across key promotion scenarios and resolve issues as discovered:</p>
+        <ul>
+          <li>Planned vs actual accrual behavior analysis</li>
+          <li>Timing mismatch analysis</li>
+          <li>Accrual trigger testing</li>
+          <li>Over / under-accrual root-cause analysis</li>
+          <li>Accrual releases and reversals</li>
+          <li>Trade term governance mapping</li>
+        </ul>
+
+        <h3>Contract-to-System Mapping</h3>
+        <ul>
+          <li>Allowance structure mapping</li>
+          <li>Pricing term interpretation into TPM logic</li>
+          <li>Funding rule documentation</li>
+          <li>Contract clause to configuration rule alignment</li>
+        </ul>
+
+        <h3>Template &amp; Baseline Quality Assurance</h3>
+        <ul>
+          <li>Promotion template accuracy</li>
+          <li>Planning baseline validity</li>
+          <li>Market template fit/gap assessment</li>
+          <li>Reusable object integrity</li>
+        </ul>
+
+        <h3>UAT Case Design</h3>
+        <ul>
+          <li>Promo lifecycle test scripts</li>
+          <li>Settlement scenarios</li>
+          <li>Pre-flight checklist with required testing results for cutover</li>
+          <li>Edge-case stress testing</li>
+        </ul>
+
+        <h3>Master Data Management</h3>
+        <ul>
+          <li>Customer hierarchy</li>
+          <li>Product master data and product hierarchy</li>
+          <li>Sales data mash-ups and mapping</li>
+          <li>Delivered baselines and aggregation / disaggregation</li>
+          <li>Funding objects</li>
+        </ul>
+      </section>
+
+      <section class="content-section reveal">
+        <h2>ERP, Posting Logic &amp; Integration</h2>
+
+        <h3>Promotion Posting Alignment</h3>
+        <p>Ensure TPM / TPx-generated postings align correctly to ERP financial objects and expected accounting treatment:</p>
+        <ul>
+          <li>GL mapping accuracy</li>
+          <li>Posting flow and reporting</li>
+          <li>Condition mapping</li>
+          <li>Error logs and error diagnosis</li>
+        </ul>
+
+        <h3>SD Pricing &amp; Condition Alignment</h3>
+        <p>Ensure commercial conditions in SAP / ERP align with TPM logic and real contract behavior:</p>
+        <ul>
+          <li>Pricing conditions vs posted allowances</li>
+          <li>Condition record logic vs TPM logic</li>
+          <li>Duplicate condition identification</li>
+          <li>Pricing / allowances flow: prioritization, stacking, and pricing controls</li>
+        </ul>
+
+        <h3>Contract-to-ERP Scenario Tracing</h3>
+        <ul>
+          <li>Promotion to invoice</li>
+          <li>Claims / deductions</li>
+          <li>Accrual to settlement</li>
+          <li>End-to-end promotional allowances scenario</li>
+        </ul>
+
+        <h3>Integration Issue Triage</h3>
+        <ul>
+          <li>Build custom tools to investigate inbound / outbound messages (JSON / XML / CSV)</li>
+          <li>Identify incorrect fields</li>
+          <li>Data Lake mapping mismatches</li>
+          <li>Middleware handshake failures</li>
+        </ul>
+      </section>
+
+      <section class="content-section reveal">
+        <h2>Commercial Finance, Reporting &amp; Controls</h2>
+
+        <h3>Business-to-Technical Defect Translation</h3>
+        <p>Turn user complaints into usable technical issue statements for vendor, support, or IT teams:</p>
+        <ul>
+          <li>"Numbers are wrong" issues converted into reproducible defects</li>
+          <li>Root-cause hypothesis framing</li>
+          <li>Vendor escalation support</li>
+          <li>Distinguishing system bugs, data issues, design gaps, configuration choices, change requests, and adoption failures</li>
+        </ul>
+
+        <h3>TPM-to-P&amp;L Reconciliation</h3>
+        <ul>
+          <li>Revenue plans vs trade spend actuals</li>
+          <li>TPM output vs operating P&amp;L</li>
+          <li>Accrual vs realized spend variance</li>
+        </ul>
+
+        <h3>Trade Spend and Financial Reporting Design</h3>
+        <ul>
+          <li>Report logic and purpose definition</li>
+          <li>KPI definitions and data drivers</li>
+          <li>Business-readable trade dashboards</li>
+          <li>TPM-to-BI field mapping</li>
+        </ul>
+
+        <h3>Accrual Control Assessment</h3>
+        <ul>
+          <li>Accrual control checkpoints</li>
+          <li>Manual adjustment risk assessment</li>
+          <li>Period-end accrual sanity checks</li>
+          <li>Control design for promotional spend</li>
+        </ul>
+
+        <h3>Deduction &amp; Claim Visibility</h3>
+        <ul>
+          <li>Claims status reporting logic</li>
+          <li>Deduction tracking templates</li>
+          <li>Settlement visibility dashboarding</li>
+          <li>Open item reporting structure</li>
+        </ul>
+
+        <h3>Month-End Close Routines</h3>
+        <ul>
+          <li>Trade close checklists</li>
+          <li>Accrual reporting packs</li>
+          <li>Open promotions assessment and forecasting</li>
+          <li>Variance analysis</li>
+        </ul>
+      </section>
+
+      <section class="content-section reveal">
+        <h2>Evidence</h2>
+        <div class="reference-engagement">
+          <ul>
+            <li>Embedded in Visualfabriq client delivery environments across RGM / TPM / TPO deployments: 24 markets, Nestlé, Mars, Haleon, Deoleo. Dec 2022–May 2024.</li>
+            <li>Built and governed commercial finance and trade execution routines at L'Oréal / SalonCentric across a $1.1B channel operation with six DCs and four channel layers. 2015–2018.</li>
+            <li>Contributed to 330+ basis points of gross margin recovery through governance, claims automation, ERP alignment, and Gross-to-Net discipline.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="content-section reveal">
+        <h2>Suitable Engagements &amp; Roles</h2>
+        <div class="suitable-roles">
+          <span class="role-pill">RGM / TPM functional lead</span>
+          <span class="role-pill">Solution or strategic advisor</span>
+          <span class="role-pill">Commercial systems advisor</span>
+          <span class="role-pill">Deployment rescue and stabilization</span>
+          <span class="role-pill">UAT and defect validation support</span>
+          <span class="role-pill">Commercial logic and ERP alignment review</span>
+          <span class="role-pill">Vendor-client liaison</span>
+        </div>
+        <div class="cta-band" style="margin-top:2.5rem;">
+          <h2>Ready to talk?</h2>
+          <p>If your commercial software environment needs functional expertise — configuration, validation, defect triage, or stabilization — get in touch.</p>
+          <div class="actions">
+            <a class="btn accent" href="mailto:joshua@doppleredward.com">Contact Joshua</a>
+            <a class="btn" href="/assets/docs/Joshua_Dopkowski_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <span class="footer-name">Joshua Dopkowski — Doppler/Edward</span>
+        <span class="footer-tagline">Advisor in commercial systems, teaching &amp; facilitation, strategy &amp; governance, and build studio work.</span>
+        <span class="footer-contact">Lyon, France · <a href="mailto:joshua@doppleredward.com">joshua@doppleredward.com</a></span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="/">Home</a>
+        <a href="/commercial-systems.html">Systems &amp; Execution</a>
+        <a href="/education-training.html">Teaching &amp; Facilitation</a>
+        <a href="/strategy-governance.html">Strategy &amp; Governance</a>
+        <a href="/build-studio.html">Build Studio</a>
+        <a href="/fpa-simulator.html">Projects</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/team.html">ANSI Art Gallery</a>
+        <a href="/assets/docs/Joshua_Dopkowski_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      </nav>
+      <p class="footer-copy">&copy; Joshua Dopkowski / Doppler/Edward</p>
+    </div>
+  </footer>
+
+  <script src="/js/site.js"></script>
+</body>
+</html>
