@@ -75,6 +75,28 @@
       }
     }
 
+    /* ---- Throughline skill card toggle ------------------- */
+    document.querySelectorAll(".skill-toggle").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var card = btn.closest(".skill-card");
+        var expanded = card.getAttribute("data-expanded") === "true";
+        card.setAttribute("data-expanded", String(!expanded));
+        btn.setAttribute("aria-expanded", String(!expanded));
+        btn.innerHTML = !expanded ? "&#9660; Hide detail" : "&#9658; Show detail";
+      });
+    });
+
+    /* ---- Experience card toggle -------------------------- */
+    document.querySelectorAll(".exp-toggle").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var card = btn.closest(".exp-card");
+        var expanded = card.getAttribute("data-expanded") === "true";
+        card.setAttribute("data-expanded", String(!expanded));
+        btn.setAttribute("aria-expanded", String(!expanded));
+        btn.textContent = !expanded ? "▾ Hide detail" : "▸ Show detail";
+      });
+    });
+
     /* ---- Pillar card keyboard expand --------------------- */
     document.querySelectorAll(".pillar-card").forEach(function (card) {
       card.setAttribute("tabindex", "0");

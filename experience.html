@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/css/portfolio-light.css" />
+  <link rel="stylesheet" href="/assets/css/print.css" media="print" />
 </head>
 <body>
   <header class="site-header">
@@ -33,13 +34,13 @@
         </div>
         <a href="/blog.html">Blog</a>
         <a href="/team.html">ANSI Art Gallery</a>
-        <!-- TODO: add Joshua_Dopkowski_CV.pdf to /assets/docs/ -->
         <a class="btn cv-btn" href="/assets/docs/Joshua_Dopkowski_CV.pdf" target="_blank" rel="noopener">Download CV</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- ===== HERO ===== -->
     <section class="page-hero">
       <div class="wrap hero-grid">
         <div>
@@ -50,12 +51,13 @@
         <aside class="hero-panel">
           <p class="kicker">Current focus</p>
           <p>RGM, TPM/TPO, trade governance, ERP-centric commercial execution, applied AI, and finance education.</p>
-          <p class="kicker">Operating pattern</p>
+          <p class="kicker" style="margin-top:.85rem;">Operating pattern</p>
           <p>Diagnose the real system, not the org chart. Translate across functions. Build practical controls. Make consequences visible.</p>
         </aside>
       </div>
     </section>
 
+    <!-- ===== VISUAL PAIR ===== -->
     <section class="section">
       <div class="wrap visual-pair">
         <div class="wide-image-placeholder">
@@ -67,88 +69,341 @@
       </div>
     </section>
 
+    <!-- ===== ANCHOR NAV ===== -->
+    <nav class="exp-anchor-nav" aria-label="Jump to section">
+      <div class="exp-anchor-nav-inner">
+        <span>Jump to:</span>
+        <a class="exp-anchor-link" href="#current-work">Current Work</a>
+        <a class="exp-anchor-link" href="#commercial-systems">Commercial Systems</a>
+        <a class="exp-anchor-link" href="#teaching">Teaching</a>
+        <a class="exp-anchor-link" href="#earlier-career">Earlier Career</a>
+        <a class="exp-anchor-link" href="#market-footprint">Market Footprint</a>
+        <a class="exp-anchor-link" href="#education">Education</a>
+      </div>
+    </nav>
+
+    <!-- ===== CAREER TIMELINE ===== -->
     <section class="section">
-      <div class="wrap timeline">
-        <article class="role">
-          <div class="role-time">May 2024-Present<br>Lyon / Remote</div>
-          <div>
-            <h2>Doppler/Edward - Advisor</h2>
-            <p>Doppler/Edward is my operating umbrella for advisory, training, product-building, and applied research at the intersection of commercial execution, finance, enterprise systems, and AI.</p>
-            <ul><li>RGM / TPM / TPO advisory, trade governance, contract-to-cash, and O2C execution.</li><li>Platform due diligence, vendor interrogation, and post-go-live stabilization.</li><li>Development of the FP&amp;A Simulator and applied AI / Python study for finance and business education.</li></ul>
-          </div>
-        </article>
+      <div class="wrap">
 
-        <article class="role">
-          <div class="role-time">Dec 2022-May 2024<br>Netherlands / Hybrid</div>
-          <div>
-            <h2>Embedded Implementation Advisor &mdash; RGM &amp; TPM/TPO</h2>
-            <p><strong>Visualfabriq client delivery environment.</strong> Embedded as a senior functional and implementation advisor across multi-country RGM and TPM/TPO deployments.</p>
-            <ul><li>Supported deployment work where promotional mechanics, Gross-to-Net logic, ERP integration, and settlement behavior had to align.</li><li>Worked across North America, Europe, the Middle East, and Africa in client environments including Nestle, Mars, Haleon, and Deoleo.</li><li>Supported fit/gap assessment, design validation, SIT, UAT, cutover readiness, defect triage, and hypercare.</li></ul>
-          </div>
-        </article>
+        <!-- CURRENT WORK -->
+        <h2 id="current-work" class="section-anchor-heading" style="font-size:clamp(1.15rem,2vw,1.5rem); color:var(--color-text-dim); font-family:var(--mono); letter-spacing:.06em; text-transform:uppercase; margin-bottom:1.25rem; padding-bottom:.5rem; border-bottom:1px solid var(--color-rule);">Current Work</h2>
 
-        <article class="role">
-          <div class="role-time">2019-2026<br>Lyon, France</div>
-          <div>
-            <h2>Lecturer - Finance, Marketing & Digital Systems</h2>
-            <p>Taught finance, financial markets, FP&A, marketing, consumer behavior, and digital systems at CEFAM, UCLY / USAC, and INSEEC.</p>
-            <ul><li>Designed practical coursework integrating analytics, systems thinking, and financial decision-making.</li><li>Built assignments that moved students beyond memorization and into applied reasoning.</li><li>Teaching areas included FP&A, financial markets, sustainable finance, digital systems, AI in business education, Python, and analytics integration.</li></ul>
-          </div>
-        </article>
+        <div class="exp-timeline">
 
-        <article class="role">
-          <div class="role-time">2018-2020<br>Lyon, France</div>
-          <div>
-            <h2>Researcher & Subject Matter Expert - emlyon business school</h2>
-            <p>Worked in CPG, luxury, entrepreneurship, and commercial resilience. The work connected institutional economics, commercial systems, scenario planning, and executive education.</p>
-          </div>
-        </article>
+          <!-- Doppler/Edward -->
+          <article class="exp-card" data-expanded="false">
+            <div class="exp-card-header">
+              <div class="exp-card-header-main">
+                <p class="exp-org">Doppler/Edward</p>
+                <p class="exp-role">Advisor</p>
+                <p class="exp-meta">May 2024&ndash;Present &middot; Lyon, France</p>
+                <p class="exp-summary">Operating umbrella for independent advisory, commercial execution diagnostics, PE&nbsp;/ investor due diligence support, applied AI, and product-building.</p>
+                <div class="exp-pillars">
+                  <span class="exp-pillar-tag all">All Four Pillars</span>
+                </div>
+              </div>
+              <button class="exp-toggle" aria-expanded="false">&#9658; Show detail</button>
+            </div>
+            <div class="exp-detail">
+              <div class="exp-detail-inner">
+                <ul>
+                  <li>RGM / TPM / TPO advisory, trade governance, contract-to-cash, and O2C execution.</li>
+                  <li>Platform due diligence, vendor interrogation, and post-go-live stabilization.</li>
+                  <li>Development of the FP&amp;A Simulator and applied AI / Python study for finance and business education.</li>
+                  <li>Finance teaching at CEFAM (ongoing) and independent facilitation and enablement work.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
 
-        <article class="role">
-          <div class="role-time">Oct 2015-Sep 2018<br>Florida / NY / NJ</div>
-          <div>
-            <h2>L'Oreal / SalonCentric - Finance Director, Finance Manager, Senior Financial Analyst</h2>
-            <p>Progressed through commercial finance roles across L'Oreal / SalonCentric. My direct P&L responsibility covered approximately $394M within a broader $1.1B channel operation.</p>
-            <ul><li>Built the trade governance and promotions finance function from scratch, including executive sponsorship, hiring, controls, and operating routines.</li><li>Automated contracts, claims, and promotional finance workflows; rebuilt reconciliation routines across AP, AR, settlement, and Gross-to-Net reporting.</li><li>Contributed to 330+ basis points of gross margin recovery over three years through claims automation, ERP alignment, promotional finance redesign, and Gross-to-Net governance.</li></ul>
-          </div>
-        </article>
+        </div>
 
-        <article class="role">
-          <div class="role-time">2014-2015<br>San Francisco Bay Area</div>
-          <div>
-            <h2>Product Development & Marketing Manager - EO Products</h2>
-            <p>Commercial and analytical role at a $35M personal care firm in mass retail channels including Whole Foods, Target, and Marshalls.</p>
-            <ul><li>Managed COGS models, BOMs, pro forma P&L, NPV analysis, supplier sourcing, SKU performance, and syndicated / POS data analysis.</li></ul>
-          </div>
-        </article>
+        <!-- COMMERCIAL SYSTEMS -->
+        <h2 id="commercial-systems" class="section-anchor-heading" style="font-size:clamp(1.15rem,2vw,1.5rem); color:var(--color-text-dim); font-family:var(--mono); letter-spacing:.06em; text-transform:uppercase; margin:2.5rem 0 1.25rem; padding-bottom:.5rem; border-bottom:1px solid var(--color-rule);">Commercial Systems</h2>
 
-        <article class="role">
-          <div class="role-time">May-Sep 2014<br>San Francisco Bay Area</div>
-          <div>
-            <h2>Pricing Analyst MBA Intern - Keysight Technologies</h2>
-            <p>Supported the Technology Order Fulfillment division during the Agilent-to-Keysight de-merger, including pricing, supply chain, gross margin, and order fulfillment content.</p>
-          </div>
-        </article>
+        <div class="exp-timeline">
 
-        <article class="role">
-          <div class="role-time">2009-2014<br>California</div>
-          <div>
-            <h2>Doppler Beverage Advisory - DTC Marketing Consultant</h2>
-            <p>Founded and operated an independent advisory practice supporting premium wine and beverage brands across DTC marketing, trade programs, CRM, POS execution, compliance, and hospitality.</p>
-          </div>
-        </article>
+          <!-- Visualfabriq -->
+          <article class="exp-card" data-expanded="false">
+            <div class="exp-card-header">
+              <div class="exp-card-header-main">
+                <p class="exp-org">Visualfabriq</p>
+                <p class="exp-role">Embedded Implementation Advisor &mdash; RGM &amp; TPM/TPO</p>
+                <p class="exp-meta">Dec 2022&ndash;May 2024 &middot; Netherlands / Hybrid</p>
+                <p class="exp-summary">24 markets &middot; Nestl&eacute; &middot; Mars &middot; Haleon &middot; Deoleo &middot; North America, Europe, Middle East &amp; Africa</p>
+                <div class="exp-pillars">
+                  <span class="exp-pillar-tag systems">Systems &amp; Execution</span>
+                </div>
+              </div>
+              <button class="exp-toggle" aria-expanded="false">&#9658; Show detail</button>
+            </div>
+            <div class="exp-detail">
+              <div class="exp-detail-inner">
+                <p>Client-facing functional lead across multi-market RGM / TPM / TPO deployments. Embedded as a senior functional and implementation advisor across multi-country engagements where promotional mechanics, Gross-to-Net logic, ERP integration, and settlement behavior had to align.</p>
+                <ul>
+                  <li>Supported fit/gap assessment, design validation, SIT, UAT, cutover readiness, defect triage, and hypercare across 24 markets.</li>
+                  <li>Worked in client environments including Nestl&eacute;, Mars, Haleon, and Deoleo across North America, Europe, the Middle East, and Africa.</li>
+                  <li>Vendor-client alignment on complex promotional mechanics, ERP integration, and settlement path diagnosis.</li>
+                  <li>Business-to-technical defect translation — turning commercial complaints into reproducible issue statements for vendor and IT teams.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
 
-        <article class="role">
-          <div class="role-time">2001-2009<br>New York City</div>
-          <div>
-            <h2>Estée Lauder / Clinique and L'Oreal - Product, Marketing & Launch Operations</h2>
-            <p>Worked through product development, marketing analysis, launch coordination, promotional execution, retailer support, packaging, logistics, and retail performance routines.</p>
-          </div>
-        </article>
+          <!-- L'Oréal Finance Director — Entry B -->
+          <div class="exp-connector">&#8593; Promoted</div>
+          <article class="exp-card" data-expanded="false">
+            <div class="exp-card-header">
+              <div class="exp-card-header-main">
+                <p class="exp-org">L&rsquo;Or&eacute;al / SalonCentric</p>
+                <p class="exp-role">Finance Director &mdash; Commercial Finance &amp; Trade Governance</p>
+                <p class="exp-meta">Promoted 2016&ndash;Sep 2018 &middot; Tampa Bay / New York / New Jersey</p>
+                <p class="exp-summary">Finance Director for SalonCentric, L&rsquo;Or&eacute;al PPD&rsquo;s $1.1B national salon distribution operation. Direct P&amp;L: $394M.</p>
+                <div class="exp-pillars">
+                  <span class="exp-pillar-tag strategy">Strategy &amp; Governance</span>
+                  <span class="exp-pillar-tag systems">Systems &amp; Execution</span>
+                </div>
+              </div>
+              <button class="exp-toggle" aria-expanded="false">&#9658; Show detail</button>
+            </div>
+            <div class="exp-detail">
+              <div class="exp-detail-inner">
+                <p>Finance Director for SalonCentric, L&rsquo;Or&eacute;al PPD&rsquo;s $1.1B national salon distribution operation. Direct P&amp;L responsibility: $394M — a mixed portfolio of PPD brands and partner / competitive brands including Dyson, GHD, Bio Ionic, Revlon, Coty, and Olaplex.</p>
+                <h4>What was built</h4>
+                <p>The trade governance and promotions finance function was built from scratch: business case authored, executive sponsorship secured, seven-person team hired and led, function deployed from zero to a governed, auditable operation.</p>
+                <h4>Scope and results</h4>
+                <ul>
+                  <li>Built and governed commercial finance and trade execution routines across a $1.1B channel operation with six distribution centers and four channel layers (sub-distribution, company-owned stores, street sales, e-commerce).</li>
+                  <li>Automated contracts, claims, and promotional finance workflows; rebuilt reconciliation routines across AP, AR, settlement, and Gross-to-Net reporting.</li>
+                  <li>Simultaneous AP/AR settlement across four channel layers — manufacturer distributor agreements, trade event mechanics, compliance chargebacks, and early payment discount windows.</li>
+                  <li>Contributed to 330+ basis points of gross margin recovery over three years through claims automation, ERP alignment, promotional finance redesign, and Gross-to-Net governance.</li>
+                  <li>Operations spanned Tampa Bay, Hudson Yards (New York), and New Jersey.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- L'Oréal Entry A — earlier role -->
+          <article class="exp-card" data-expanded="false" style="margin-top:.5rem;">
+            <div class="exp-card-header">
+              <div class="exp-card-header-main">
+                <p class="exp-org">L&rsquo;Or&eacute;al / SalonCentric</p>
+                <p class="exp-role">Finance Manager / Senior Financial Analyst</p>
+                <p class="exp-meta">Oct 2015&ndash;Promoted 2016 &middot; Tampa Bay / New York / New Jersey</p>
+                <p class="exp-summary">Managed forecasting, P&amp;L, and sales-cycle reporting for the SalonCentric business unit.</p>
+                <div class="exp-pillars">
+                  <span class="exp-pillar-tag strategy">Strategy &amp; Governance</span>
+                  <span class="exp-pillar-tag systems">Systems &amp; Execution</span>
+                </div>
+              </div>
+              <button class="exp-toggle" aria-expanded="false">&#9658; Show detail</button>
+            </div>
+            <div class="exp-detail">
+              <div class="exp-detail-inner">
+                <ul>
+                  <li>Managed forecasting, P&amp;L, and sales-cycle reporting for the SalonCentric business unit.</li>
+                  <li>Built trade investment allocation reporting tools used for commercial leadership decisions.</li>
+                  <li>Coordinated promotions finance processes, performance tracking, and accrual routines.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- TEACHING -->
+        <h2 id="teaching" class="section-anchor-heading" style="font-size:clamp(1.15rem,2vw,1.5rem); color:var(--color-text-dim); font-family:var(--mono); letter-spacing:.06em; text-transform:uppercase; margin:2.5rem 0 1.25rem; padding-bottom:.5rem; border-bottom:1px solid var(--color-rule);">Teaching</h2>
+
+        <div class="exp-timeline">
+
+          <!-- CEFAM -->
+          <article class="exp-card" data-expanded="false">
+            <div class="exp-card-header">
+              <div class="exp-card-header-main">
+                <p class="exp-org">CEFAM &mdash; Centre d&rsquo;&Eacute;tudes Franco-Am&eacute;ricain de Management</p>
+                <p class="exp-role">Instructor of Finance and Marketing</p>
+                <p class="exp-meta">Sep 2019&ndash;Present &middot; Lyon, France</p>
+                <p class="exp-summary">Finance, FP&amp;A, marketing, consumer behavior, sustainable finance, and accounting across BBA cohorts.</p>
+                <div class="exp-pillars">
+                  <span class="exp-pillar-tag teaching">Teaching &amp; Facilitation</span>
+                </div>
+              </div>
+              <button class="exp-toggle" aria-expanded="false">&#9658; Show detail</button>
+            </div>
+            <div class="exp-detail">
+              <div class="exp-detail-inner">
+                <p>Designed and delivered practical coursework integrating financial logic, analytics, AI, ERP behavior, and business judgment across multiple cohorts.</p>
+                <h4>Courses taught</h4>
+                <ul>
+                  <li><strong>Financial Planning &amp; Analysis</strong> (BBA) — Analyzes corporate financial statements using modern data analytics, social science research methods, and applied storytelling.</li>
+                  <li><strong>Portfolio Management</strong> (BBA) — Global financial asset investment using business intelligence tools and financial report analysis. Covers money and capital markets, derivatives, and portfolio theory.</li>
+                  <li><strong>Consumer Behavior</strong> (BBA) — Major trends in consumer behavior examined through consumer psychology, behavioral economics, behavioral finance, and sociology.</li>
+                  <li><strong>Introduction to Marketing</strong> (BBA, First Year) — Brand management, product development, distribution planning, pricing strategy, promotional planning, marketing communications, and business case analysis.</li>
+                  <li><strong>Sustainable Finance</strong> (BBA) — Financial audits, regulation and compliance with focus on green finance and CSR reporting for international corporations.</li>
+                  <li><strong>Principles of Accounting</strong> (BBA) — GAAP and IFRS accounting rules and concepts.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- INSEEC -->
+          <article class="exp-card" data-expanded="false">
+            <div class="exp-card-header">
+              <div class="exp-card-header-main">
+                <p class="exp-org">INSEEC</p>
+                <p class="exp-role">Finance Lecturer</p>
+                <p class="exp-meta">Sep 2022&ndash;Dec 2022 &middot; Lyon, France</p>
+                <p class="exp-summary">Finance of International Business Development, Marketing Budgets, and Financial Planning &amp; Analysis.</p>
+                <div class="exp-pillars">
+                  <span class="exp-pillar-tag teaching">Teaching &amp; Facilitation</span>
+                </div>
+              </div>
+              <button class="exp-toggle" aria-expanded="false">&#9658; Show detail</button>
+            </div>
+            <div class="exp-detail">
+              <div class="exp-detail-inner">
+                <ul>
+                  <li><strong>Finance of International Business Development</strong> — Explored the complexity of manufacturing and exporting a product internationally, with primary focus on Luxury Wine. Students identified international opportunities, analyzed liability, and sourced trade data.</li>
+                  <li><strong>Marketing Budgets</strong> — Covered budgeting processes across diverse organizations: scope, teams, scheduling, resources, and contracts.</li>
+                  <li><strong>Financial Planning &amp; Analysis</strong> (BBA) — Analyzes corporate financial statements using modern data technology combined with social science research methods and applied storytelling.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- emlyon -->
+          <article class="exp-card" data-expanded="false">
+            <div class="exp-card-header">
+              <div class="exp-card-header-main">
+                <p class="exp-org">emlyon business school</p>
+                <p class="exp-role">Instructeur &middot; Supervisor of Professional Thesis &middot; Assistant de P&eacute;dagogie</p>
+                <p class="exp-meta">Sep 2018&ndash;Jul 2020 &middot; Paris / Lyon / Saint-&Eacute;tienne, France</p>
+                <p class="exp-summary">MSc course delivery, professional thesis supervision, and research in CPG, luxury, entrepreneurship, and commercial resilience.</p>
+                <div class="exp-pillars">
+                  <span class="exp-pillar-tag teaching">Teaching &amp; Facilitation</span>
+                  <span class="exp-pillar-tag strategy">Strategy &amp; Governance</span>
+                </div>
+              </div>
+              <button class="exp-toggle" aria-expanded="false">&#9658; Show detail</button>
+            </div>
+            <div class="exp-detail">
+              <div class="exp-detail-inner">
+                <p>Worked in CPG, luxury, entrepreneurship, and commercial resilience. The work connected institutional economics, commercial systems, scenario planning, and executive education.</p>
+                <h4>Courses and projects</h4>
+                <ul>
+                  <li><strong>MSc Luxury Management and Marketing</strong> (Thesis Supervision) — Supervised specialized projects for MSc students demonstrating deep understanding of a luxury sector via business plan or thesis. Selected supervised projects: <em>Trend Forecasting in the Digital Age</em>, <em>Business Plan: Maison Lycon — Dog Resort &amp; Spa</em>, <em>The French wine industry and the Chinese opportunity</em>, <em>TikTok as a tool for luxury brand marketing in China</em>.</li>
+                  <li><strong>New Ventures in the Luxury Industry</strong> (MSc) — Entrepreneurship concepts from the perspective of founders, investors, and established firms in the global luxury industry.</li>
+                  <li><strong>Leadership in New Ventures</strong> (BBA) — Professional insight for new business strategy development, opportunities from regulation, entrepreneurial finance, and navigating start-ups and professional networks.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- EARLIER CAREER -->
+        <h2 id="earlier-career" class="section-anchor-heading" style="font-size:clamp(1.15rem,2vw,1.5rem); color:var(--color-text-dim); font-family:var(--mono); letter-spacing:.06em; text-transform:uppercase; margin:2.5rem 0 1.25rem; padding-bottom:.5rem; border-bottom:1px solid var(--color-rule);">Earlier Career</h2>
+
+        <div class="exp-timeline">
+
+          <!-- EO Products -->
+          <article class="exp-card" data-expanded="false">
+            <div class="exp-card-header">
+              <div class="exp-card-header-main">
+                <p class="exp-org">EO Products</p>
+                <p class="exp-role">Product Development &amp; Marketing Manager</p>
+                <p class="exp-meta">2014&ndash;2015 &middot; San Francisco Bay Area</p>
+                <p class="exp-summary">Commercial and analytical role at a $35M personal care firm in mass retail channels including Whole Foods, Target, and Marshalls.</p>
+                <div class="exp-pillars">
+                  <span class="exp-pillar-tag strategy">Strategy &amp; Governance</span>
+                  <span class="exp-pillar-tag systems">Systems &amp; Execution</span>
+                </div>
+              </div>
+              <button class="exp-toggle" aria-expanded="false">&#9658; Show detail</button>
+            </div>
+            <div class="exp-detail">
+              <div class="exp-detail-inner">
+                <ul>
+                  <li>Managed COGS models, BOMs, pro forma P&amp;L, NPV analysis, supplier sourcing, SKU performance, and syndicated / POS data analysis.</li>
+                  <li>Product development across personal care SKU portfolio for national retail channels.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <!-- Keysight Technologies -->
+          <article class="exp-card" data-expanded="false">
+            <div class="exp-card-header">
+              <div class="exp-card-header-main">
+                <p class="exp-org">Keysight Technologies <span style="font-weight:400; color:var(--color-text-dim);">(Agilent / Keysight)</span></p>
+                <p class="exp-role">Pricing Analyst</p>
+                <p class="exp-meta">MBA Internship &middot; May&ndash;Sep 2014 &middot; San Francisco Bay Area</p>
+                <p class="exp-summary">Supported the Technology Order Fulfillment division during the Agilent-to-Keysight de-merger.</p>
+                <div class="exp-pillars">
+                  <span class="exp-pillar-tag strategy">Strategy &amp; Governance</span>
+                </div>
+              </div>
+              <button class="exp-toggle" aria-expanded="false">&#9658; Show detail</button>
+            </div>
+            <div class="exp-detail">
+              <div class="exp-detail-inner">
+                <p>Supported the Technology Order Fulfillment division during the Agilent-to-Keysight de-merger, including pricing, supply chain, gross margin, and order fulfillment content.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Doppler Beverage Advisory -->
+          <article class="exp-card" data-expanded="false">
+            <div class="exp-card-header">
+              <div class="exp-card-header-main">
+                <p class="exp-org">Doppler Beverage Advisory</p>
+                <p class="exp-role">DTC Marketing Consultant</p>
+                <p class="exp-meta">2009&ndash;2014 &middot; California</p>
+                <p class="exp-summary">Founded and operated an independent advisory practice supporting premium wine and beverage brands.</p>
+                <div class="exp-pillars">
+                  <span class="exp-pillar-tag strategy">Strategy &amp; Governance</span>
+                  <span class="exp-pillar-tag build">Build Studio</span>
+                </div>
+              </div>
+              <button class="exp-toggle" aria-expanded="false">&#9658; Show detail</button>
+            </div>
+            <div class="exp-detail">
+              <div class="exp-detail-inner">
+                <p>Founded and operated an independent advisory practice supporting premium wine and beverage brands across DTC marketing, trade programs, CRM, POS execution, compliance, and hospitality.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Estée Lauder / Clinique -->
+          <article class="exp-card" data-expanded="false">
+            <div class="exp-card-header">
+              <div class="exp-card-header-main">
+                <p class="exp-org">Est&eacute;e Lauder / Clinique &amp; L&rsquo;Or&eacute;al</p>
+                <p class="exp-role">Product, Marketing &amp; Launch Operations</p>
+                <p class="exp-meta">2001&ndash;2009 &middot; New York City</p>
+                <p class="exp-summary">Product development, marketing analysis, launch coordination, and promotional execution across leading beauty brands.</p>
+                <div class="exp-pillars">
+                  <span class="exp-pillar-tag systems">Systems &amp; Execution</span>
+                  <span class="exp-pillar-tag strategy">Strategy &amp; Governance</span>
+                </div>
+              </div>
+              <button class="exp-toggle" aria-expanded="false">&#9658; Show detail</button>
+            </div>
+            <div class="exp-detail">
+              <div class="exp-detail-inner">
+                <p>Worked through product development, marketing analysis, launch coordination, promotional execution, retailer support, packaging, logistics, and retail performance routines at Est&eacute;e Lauder / Clinique and L&rsquo;Or&eacute;al.</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
       </div>
     </section>
 
-    <section class="section soft">
+    <!-- ===== MARKET FOOTPRINT ===== -->
+    <section class="section soft" id="market-footprint">
       <div class="wrap split">
         <div class="section-header">
           <span class="eyebrow">Market footprint</span>
@@ -163,19 +418,24 @@
       </div>
     </section>
 
-    <section class="section">
+    <!-- ===== EDUCATION & CREDENTIALS ===== -->
+    <section class="section" id="education">
       <div class="wrap">
         <div class="section-header">
-          <span class="eyebrow">Education & credentials</span>
+          <span class="eyebrow">Education &amp; credentials</span>
           <h2>Academic foundation and selected credentials.</h2>
         </div>
         <div class="grid">
-          <article class="card"><h3>New York University</h3><p>Bachelor of Science - Media, Culture & Communications. Cum laude. Founders Day Award. Department of Media Ecology, founded by Neil Postman.</p></article>
-          <article class="card"><h3>Sonoma State University</h3><p>MBA - International Business.</p></article>
-          <article class="card"><h3>emlyon business school</h3><p>Research / Subject Matter Expert - Resilience in Entrepreneurship.</p></article>
+          <article class="card"><h3>New York University</h3><p>Bachelor of Science &mdash; Media, Culture &amp; Communications. Cum laude. Founders Day Award. Department of Media Ecology, founded by Neil Postman.</p></article>
+          <article class="card"><h3>Sonoma State University</h3><p>MBA &mdash; International Business.</p></article>
+          <article class="card"><h3>emlyon business school</h3><p>Research / Subject Matter Expert &mdash; Resilience in Entrepreneurship.</p></article>
         </div>
-        <div class="tag-list">
-          <span class="tag">Visualfabriq Bootcamp</span><span class="tag">IBM Data Analysis with Python</span><span class="tag">IBM GenAI with Python</span><span class="tag">Databricks GenAI Fundamentals</span><span class="tag">Microsoft Azure AI Essentials</span><span class="tag">Certified Sommelier</span>
+        <div class="cred-pills">
+          <span class="cred-pill">Visualfabriq Bootcamp</span>
+          <span class="cred-pill">IBM Data Analysis with Python</span>
+          <span class="cred-pill">IBM GenAI with Python</span>
+          <span class="cred-pill">Databricks GenAI Fundamentals</span>
+          <span class="cred-pill">Microsoft Azure AI Essentials Professional Certificate</span>
         </div>
       </div>
     </section>
@@ -186,7 +446,7 @@
       <div class="footer-top">
         <span class="footer-name">Joshua Dopkowski &mdash; Doppler/Edward</span>
         <span class="footer-tagline">Advisor in commercial systems, teaching &amp; facilitation, strategy &amp; governance, and build studio work.</span>
-        <span class="footer-contact">Lyon, France &middot; <a href="mailto:joshua@doppleredward.com">joshua@doppleredward.com</a></span>
+        <span class="footer-contact">Lyon, France &middot; <a href="mailto:joshua@doppleredward.com">joshua@doppleredward.com</a> &middot; <a href="https://www.linkedin.com/in/joshuadopkowski/" target="_blank" rel="noopener">LinkedIn</a></span>
       </div>
       <nav class="footer-nav" aria-label="Footer navigation">
         <a href="/">Home</a>
@@ -197,7 +457,6 @@
         <a href="/fpa-simulator.html">FP&amp;A Simulator</a>
         <a href="/blog.html">Blog</a>
         <a href="/team.html">ANSI Art Gallery</a>
-        <!-- TODO: add Joshua_Dopkowski_CV.pdf to /assets/docs/ -->
         <a href="/assets/docs/Joshua_Dopkowski_CV.pdf" target="_blank" rel="noopener">Download CV</a>
       </nav>
       <p class="footer-copy">&copy; Joshua Dopkowski / Doppler/Edward</p>
