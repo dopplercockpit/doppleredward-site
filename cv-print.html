@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joshua Edward Dopkowski CV</title>
+  <meta name="description" content="Temporary print CV for Joshua Edward Dopkowski, based on the Doppler/Edward experience archive." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #2f2a23;
+      --muted: #675f54;
+      --soft: #f4efe7;
+      --rule: #ded4c5;
+      --copper: #b8722a;
+    }
+
+    @page {
+      size: A4;
+      margin: 16mm 15mm 17mm;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      background: #fff;
+      color: var(--ink);
+      font: 10.5pt/1.45 "Inter", Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #fff;
+    }
+
+    main {
+      max-width: 180mm;
+      margin: 0 auto;
+    }
+
+    h1,
+    h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      color: var(--ink);
+    }
+
+    h1 {
+      margin: 0 0 3mm;
+      font-size: 27pt;
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 10mm 0 4mm;
+      padding-bottom: 2mm;
+      border-bottom: 1px solid var(--rule);
+      font-size: 15pt;
+      line-height: 1.15;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 11.5pt;
+      line-height: 1.3;
+      color: var(--ink);
+    }
+
+    p {
+      margin: 0 0 3mm;
+    }
+
+    ul {
+      margin: 2mm 0 0;
+      padding-left: 5mm;
+    }
+
+    li {
+      margin: 0 0 1.8mm;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .topline {
+      padding-bottom: 6mm;
+      border-bottom: 2px solid var(--copper);
+      margin-bottom: 7mm;
+    }
+
+    .positioning {
+      margin: 0 0 2mm;
+      color: var(--copper);
+      font-size: 11.5pt;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .contact {
+      margin: 0;
+      color: var(--muted);
+      font-size: 9.5pt;
+    }
+
+    .summary {
+      padding: 5mm;
+      border: 1px solid var(--rule);
+      background: #fffaf2;
+      margin-bottom: 7mm;
+    }
+
+    .summary p:last-child { margin-bottom: 0; }
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3mm;
+      margin: 0 0 7mm;
+    }
+
+    .proof {
+      padding: 3.5mm;
+      border: 1px solid var(--rule);
+      background: #fff;
+    }
+
+    .proof strong {
+      display: block;
+      margin-bottom: 1mm;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 16pt;
+      line-height: 1;
+      color: var(--copper);
+    }
+
+    .proof span {
+      display: block;
+      color: var(--muted);
+      font-size: 8.5pt;
+      line-height: 1.3;
+    }
+
+    .role {
+      page-break-inside: avoid;
+      break-inside: avoid;
+      padding: 4mm 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .role:last-child { border-bottom: 0; }
+
+    .role-head {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 5mm;
+      align-items: start;
+      margin-bottom: 2mm;
+    }
+
+    .role-title {
+      color: var(--copper);
+      font-weight: 700;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 9pt;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .section-note {
+      color: var(--muted);
+      margin-bottom: 3mm;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6mm;
+    }
+
+    .compact-list {
+      margin: 0;
+      padding-left: 4.5mm;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2mm;
+      margin-top: 2mm;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 1.3mm 2.2mm;
+      border: 1px solid #e5d7c4;
+      background: var(--soft);
+      color: var(--muted);
+      font-size: 8.5pt;
+      font-weight: 600;
+    }
+
+    .page-break {
+      page-break-before: always;
+      break-before: page;
+    }
+
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="topline">
+      <h1>Joshua Edward Dopkowski</h1>
+      <p class="positioning">Advisor &mdash; Commercial Systems | Teaching &amp; Facilitation | Strategy &amp; Governance | Build Studio</p>
+      <p class="contact">Lyon, France &middot; joshua@doppleredward.com &middot; linkedin.com/in/joshuadopkowski &middot; doppleredward.com</p>
+    </header>
+
+    <section class="summary" aria-label="Profile">
+      <p><strong>Profile / overview.</strong> Advisor based in Lyon, France, working across commercial systems delivery, CPG finance, RGM / TPM / TPO, trade governance, ERP-centered execution, teaching and facilitation, applied AI, simulation, and practical build work.</p>
+      <p>I help organizations turn commercial intent into working systems, governed decisions, and practical tools people can use. The recurring operating pattern is translation across functions, diagnosis of execution breakpoints, practical governance design, and hands-on tools that make consequences visible.</p>
+    </section>
+
+    <section class="proof-grid" aria-label="Selected proof points">
+      <div class="proof"><strong>20+ Years</strong><span>Commercial, finance, CPG, education, systems, and product-building experience.</span></div>
+      <div class="proof"><strong>$394M</strong><span>Commercial finance responsibility within a global CPG / beauty company.</span></div>
+      <div class="proof"><strong>500+ Hours</strong><span>Teaching, training, facilitation, and applied business education.</span></div>
+      <div class="proof"><strong>24 Markets</strong><span>Commercial execution and software deployment across North America, Europe, the Middle East, and Africa.</span></div>
+    </section>
+
+    <section aria-label="Experience archive">
+      <h2>Experience Archive</h2>
+
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>Doppler/Edward</h3>
+            <p class="role-title">Advisor</p>
+          </div>
+          <p class="meta">May 2024-Present<br />Lyon, France</p>
+        </div>
+        <p>Operating umbrella for independent advisory, commercial execution diagnostics, PE / investor due diligence support, applied AI, and product-building.</p>
+        <ul>
+          <li>RGM / TPM / TPO advisory, trade governance, contract-to-cash, and O2C execution.</li>
+          <li>Platform due diligence, vendor interrogation, and post-go-live stabilization.</li>
+          <li>Development of the FP&amp;A Simulator and applied AI / Python study for finance and business education.</li>
+          <li>Finance teaching at CEFAM and independent facilitation and enablement work.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>Visualfabriq</h3>
+            <p class="role-title">Embedded Implementation Advisor &mdash; RGM &amp; TPM/TPO</p>
+          </div>
+          <p class="meta">Dec 2022-May 2024<br />Netherlands / Hybrid</p>
+        </div>
+        <p>Client-facing functional lead across multi-market RGM / TPM / TPO deployments where promotional mechanics, Gross-to-Net logic, ERP integration, and settlement behavior had to align.</p>
+        <ul>
+          <li>Supported fit/gap assessment, design validation, SIT, UAT, cutover readiness, defect triage, and hypercare across 24 markets.</li>
+          <li>Worked in client environments including Nestl&eacute;, Mars, Haleon, and Deoleo across North America, Europe, the Middle East, and Africa.</li>
+          <li>Translated business issues into reproducible issue statements for vendor, IT, finance, and commercial teams.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>L&rsquo;Or&eacute;al / SalonCentric</h3>
+            <p class="role-title">Finance Director &mdash; Commercial Finance &amp; Trade Governance</p>
+          </div>
+          <p class="meta">2016-Sep 2018<br />Tampa Bay / New York / New Jersey</p>
+        </div>
+        <p>Finance Director for SalonCentric, L&rsquo;Or&eacute;al PPD&rsquo;s $1.1B national salon distribution operation. Direct P&amp;L responsibility: $394M.</p>
+        <ul>
+          <li>Built the trade governance and promotions finance function from scratch: business case authored, executive sponsorship secured, seven-person team hired and led.</li>
+          <li>Governed commercial finance and trade execution routines across six distribution centers and four channel layers.</li>
+          <li>Automated contracts, claims, and promotional finance workflows; rebuilt reconciliation across AP, AR, settlement, and Gross-to-Net reporting.</li>
+          <li>Contributed to 330+ basis points of gross margin recovery through claims automation, ERP alignment, promotional finance redesign, and Gross-to-Net governance.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>L&rsquo;Or&eacute;al / SalonCentric</h3>
+            <p class="role-title">Finance Manager / Senior Financial Analyst</p>
+          </div>
+          <p class="meta">Oct 2015-2016<br />Tampa Bay / New York / New Jersey</p>
+        </div>
+        <ul>
+          <li>Managed forecasting, P&amp;L, and sales-cycle reporting for the SalonCentric business unit.</li>
+          <li>Built trade investment allocation reporting tools used for commercial leadership decisions.</li>
+          <li>Coordinated promotions finance processes, performance tracking, and accrual routines.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>CEFAM &mdash; Centre d&rsquo;&Eacute;tudes Franco-Am&eacute;ricain de Management</h3>
+            <p class="role-title">Instructor of Finance and Marketing</p>
+          </div>
+          <p class="meta">Sep 2019-Present<br />Lyon, France</p>
+        </div>
+        <p>Designed and delivered practical coursework integrating financial logic, analytics, AI, ERP behavior, and business judgment across BBA cohorts.</p>
+        <ul>
+          <li>Courses include Financial Planning &amp; Analysis, Portfolio Management, Consumer Behavior, Introduction to Marketing, Sustainable Finance, and Principles of Accounting.</li>
+          <li>Applied business education across finance, marketing, consumer psychology, behavioral economics, financial reporting, and business case analysis.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>INSEEC</h3>
+            <p class="role-title">Finance Lecturer</p>
+          </div>
+          <p class="meta">Sep 2022-Dec 2022<br />Lyon, France</p>
+        </div>
+        <ul>
+          <li>Taught Finance of International Business Development, Marketing Budgets, and Financial Planning &amp; Analysis.</li>
+          <li>Connected export economics, trade data, budget governance, financial statements, and applied storytelling.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>emlyon business school</h3>
+            <p class="role-title">Instructor / Thesis Supervisor / Assistant de P&eacute;dagogie</p>
+          </div>
+          <p class="meta">Sep 2018-Jul 2020<br />Paris / Lyon / Saint-&Eacute;tienne</p>
+        </div>
+        <ul>
+          <li>MSc course delivery, professional thesis supervision, and research in CPG, luxury, entrepreneurship, and commercial resilience.</li>
+          <li>Supervised specialized MSc projects across luxury trend forecasting, business plans, wine industry strategy, and digital luxury marketing.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>EO Products</h3>
+            <p class="role-title">Product Development &amp; Marketing Manager</p>
+          </div>
+          <p class="meta">2014-2015<br />San Francisco Bay Area</p>
+        </div>
+        <ul>
+          <li>Commercial and analytical role at a $35M personal care firm in mass retail channels including Whole Foods, Target, and Marshalls.</li>
+          <li>Managed COGS models, BOMs, pro forma P&amp;L, NPV analysis, supplier sourcing, SKU performance, and syndicated / POS data analysis.</li>
+        </ul>
+      </article>
+
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>Keysight Technologies / Agilent</h3>
+            <p class="role-title">Pricing Analyst</p>
+          </div>
+          <p class="meta">MBA Internship, 2014<br />San Francisco Bay Area</p>
+        </div>
+        <p>Supported the Technology Order Fulfillment division during the Agilent-to-Keysight de-merger, including pricing, supply chain, gross margin, and order fulfillment content.</p>
+      </article>
+
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>Doppler Beverage Advisory</h3>
+            <p class="role-title">DTC Marketing Consultant</p>
+          </div>
+          <p class="meta">2009-2014<br />California</p>
+        </div>
+        <p>Founded and operated an independent advisory practice supporting premium wine and beverage brands across DTC marketing, trade programs, CRM, POS execution, compliance, and hospitality.</p>
+      </article>
+
+      <article class="role">
+        <div class="role-head">
+          <div>
+            <h3>Est&eacute;e Lauder / Clinique &amp; L&rsquo;Or&eacute;al</h3>
+            <p class="role-title">Product, Marketing &amp; Launch Operations</p>
+          </div>
+          <p class="meta">2001-2009<br />New York City</p>
+        </div>
+        <p>Product development, marketing analysis, launch coordination, promotional execution, retailer support, packaging, logistics, and retail performance routines across leading beauty brands.</p>
+      </article>
+    </section>
+
+    <section class="page-break" aria-label="Market footprint">
+      <h2>Market Footprint</h2>
+      <p class="section-note">Commercial execution and software deployment across 24 markets in four regions.</p>
+      <div class="two-col">
+        <div>
+          <h3>North America</h3>
+          <p>USA, Canada</p>
+          <h3>Europe</h3>
+          <p>UK, Ireland, France, Germany, Italy, Spain, Belgium, Netherlands, Poland, Switzerland, Portugal, Turkey</p>
+        </div>
+        <div>
+          <h3>Middle East</h3>
+          <p>Kuwait, UAE, Saudi Arabia, Egypt</p>
+          <h3>Africa</h3>
+          <p>South Africa, Namibia, Botswana, Zambia, Kenya, Ethiopia</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Education and credentials">
+      <h2>Education &amp; Credentials</h2>
+      <div class="two-col">
+        <div>
+          <h3>New York University</h3>
+          <p>Bachelor of Science &mdash; Media, Culture &amp; Communications. Cum laude. Founders Day Award. Department of Media Ecology, founded by Neil Postman.</p>
+          <h3>Sonoma State University</h3>
+          <p>MBA &mdash; International Business.</p>
+          <h3>emlyon business school</h3>
+          <p>Research / Subject Matter Expert &mdash; Resilience in Entrepreneurship.</p>
+        </div>
+        <div>
+          <h3>Selected credentials</h3>
+          <ul class="compact-list">
+            <li>Visualfabriq Bootcamp</li>
+            <li>IBM Data Analysis with Python</li>
+            <li>IBM GenAI with Python</li>
+            <li>Databricks GenAI Fundamentals</li>
+            <li>Microsoft Azure AI Essentials Professional Certificate</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Tools and platforms">
+      <h2>Tools / Platforms</h2>
+      <p class="section-note">Selected operating environments, technical surfaces, and applied tool categories.</p>
+      <div class="pill-list">
+        <span class="pill">RGM / TPM / TPO</span>
+        <span class="pill">ERP integration</span>
+        <span class="pill">Gross-to-Net</span>
+        <span class="pill">Trade governance</span>
+        <span class="pill">AP / AR settlement</span>
+        <span class="pill">FP&amp;A</span>
+        <span class="pill">Financial modeling</span>
+        <span class="pill">Business intelligence</span>
+        <span class="pill">Python</span>
+        <span class="pill">Applied AI</span>
+        <span class="pill">Simulation</span>
+        <span class="pill">Curriculum design</span>
+        <span class="pill">Facilitation</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

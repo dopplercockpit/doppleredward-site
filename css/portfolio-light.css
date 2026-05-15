@@ -106,11 +106,11 @@ li + li { margin-top: .35rem; }
 .nav {
   max-width: 1180px;
   margin: 0 auto;
-  padding: .72rem 1.25rem;
+  padding: .68rem 1.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .brand {
@@ -118,12 +118,12 @@ li + li { margin-top: .35rem; }
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  min-width: 140px;
-  padding: .32rem .5rem;
-  border: 1px solid rgba(30,37,50,.14);
-  border-radius: var(--radius);
-  background: linear-gradient(135deg, rgba(30,37,50,.95), rgba(30,37,50,.80));
-  box-shadow: 0 10px 24px rgba(30,37,50,.10);
+  min-width: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   transition: transform .25s ease;
   flex-shrink: 0;
 }
@@ -131,17 +131,17 @@ li + li { margin-top: .35rem; }
 
 .brand-logo {
   display: block;
-  width: clamp(120px, 13vw, 168px);
+  width: clamp(120px, 12vw, 168px);
   height: auto;
-  max-height: 44px;
+  max-height: 46px;
   object-fit: contain;
-  filter: drop-shadow(0 3px 7px rgba(0,0,0,.18));
+  filter: none;
 }
 
 .links {
   display: flex;
   align-items: center;
-  gap: .55rem;
+  gap: clamp(.5rem, .82vw, .78rem);
   flex-wrap: nowrap;
 }
 
@@ -149,7 +149,7 @@ li + li { margin-top: .35rem; }
   position: relative;
   color: var(--color-text-mid);
   text-decoration: none;
-  font: 600 .82rem/1.2 var(--sans);
+  font: 600 .84rem/1.25 var(--sans);
   white-space: nowrap;
   transition: color .22s ease;
 }
@@ -177,7 +177,7 @@ li + li { margin-top: .35rem; }
   gap: .22rem;
   cursor: default;
   color: var(--color-text-mid);
-  font: 600 .82rem/1.2 var(--sans);
+  font: 600 .84rem/1.25 var(--sans);
   white-space: nowrap;
   transition: color .22s ease;
 }
