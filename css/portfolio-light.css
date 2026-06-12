@@ -1423,3 +1423,7 @@ li + li { margin-top: .35rem; }
   .projects-row { grid-template-columns: 1fr 1fr; }
   .evidence-bar .wrap { grid-template-columns: 1fr; }
 }
+
+/* Three-column variant for the homepage offer cards (Update Pass 3) */
+.pillar-cards-grid.three { grid-template-columns: repeat(3, minmax(0,1fr)); }
+@media (max-width: 1100px) { .pillar-cards-grid.three { grid-template-columns: 1fr; } }
