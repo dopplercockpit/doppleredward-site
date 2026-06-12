@@ -1,8 +1,9 @@
-/* Doppler/Edward — site.js v5 */
+/* Doppler/Edward — site.js v6 */
 (function () {
   "use strict";
 
   var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var isMobile = function () { return window.innerWidth <= 700; };
 
   /* ---- Mobile nav ---------------------------------------- */
   document.addEventListener("DOMContentLoaded", function () {
@@ -35,6 +36,25 @@
         }
       });
     }
+
+    /* ---- Submenu accordion (mobile only) ------------------- */
+    document.querySelectorAll("[data-sub-toggle]").forEach(function (btn) {
+      var submenu = btn.closest(".has-sub").querySelector(".submenu");
+      if (!submenu) return;
+
+      // if a child link is the current page, open accordion on load
+      if (isMobile() && submenu.querySelector("[aria-current='page']")) {
+        submenu.classList.add("mobile-sub-open");
+        btn.setAttribute("aria-expanded", "true");
+      }
+
+      btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        if (!isMobile()) return; // desktop: hover handles it
+        var isOpen = submenu.classList.toggle("mobile-sub-open");
+        btn.setAttribute("aria-expanded", String(isOpen));
+      });
+    });
 
     /* ---- Scroll reveal ----------------------------------- */
     var revealEls = document.querySelectorAll(".reveal");

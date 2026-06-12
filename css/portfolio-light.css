@@ -170,31 +170,69 @@ li + li { margin-top: .35rem; }
 .links > a[aria-current="page"]::after { right: 0; }
 
 /* dropdown nav */
-.has-sub { position: relative; }
-.has-sub > .parent {
+.has-sub {
+  position: relative;
   display: inline-flex;
   align-items: center;
-  gap: .22rem;
-  cursor: default;
+  gap: 0;
+}
+/* the navigable parent link */
+.has-sub > .parent-link {
+  display: inline-flex;
+  align-items: center;
   color: var(--color-text-mid);
   font: 600 .84rem/1.25 var(--sans);
   white-space: nowrap;
+  text-decoration: none;
+  transition: color .22s ease;
+  padding: 0;
+  position: relative;
+}
+.has-sub > .parent-link::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 100%; bottom: -.3rem;
+  height: 2px;
+  background: var(--color-copper);
+  transition: right .25s ease;
+}
+.has-sub > .parent-link:hover { color: var(--color-copper); }
+.has-sub > .parent-link:hover::after { right: 0; }
+.has-sub > .parent-link[aria-current="page"] { color: var(--color-copper); }
+.has-sub > .parent-link[aria-current="page"]::after { right: 0; }
+/* caret toggle button */
+.sub-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem; height: 1.5rem;
+  margin-left: .18rem;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-mid);
   transition: color .22s ease;
 }
-.has-sub > .parent:hover { color: var(--color-copper); }
-.has-sub > .parent::after {
-  content: "";
+.sub-toggle:hover { color: var(--color-copper); }
+.sub-caret {
+  display: block;
   width: .36rem; height: .36rem;
   border-right: 2px solid currentColor;
   border-bottom: 2px solid currentColor;
   transform: rotate(45deg) translateY(-1px);
   opacity: .65;
+  transition: transform .22s ease, opacity .22s ease;
+}
+.sub-toggle[aria-expanded="true"] .sub-caret {
+  transform: rotate(-135deg) translateY(-1px);
+  opacity: 1;
 }
 .submenu {
   position: absolute;
   top: calc(100% + .75rem);
   left: 0;
-  min-width: 195px;
+  min-width: 205px;
   padding: .4rem;
   border: 1px solid rgba(184,114,42,.22);
   border-radius: var(--radius);
@@ -219,7 +257,9 @@ li + li { margin-top: .35rem; }
   text-decoration: none;
   transition: background .18s ease, color .18s ease;
 }
-.submenu a:hover { background: rgba(184,114,42,.09); color: var(--color-copper); }
+.submenu a:hover,
+.submenu a[aria-current="page"] { background: rgba(184,114,42,.09); color: var(--color-copper); }
+.submenu a[aria-current="page"] { font-weight: 600; }
 
 /* CV button in nav */
 .cv-btn {
@@ -1395,10 +1435,27 @@ li + li { margin-top: .35rem; }
     padding: .65rem .3rem;
     width: 100%;
   }
-  .has-sub { width: 100%; }
+  .has-sub {
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .has-sub > .parent-link {
+    flex: 1;
+    font-size: 1rem;
+    padding: .65rem .3rem;
+  }
+  .sub-toggle {
+    width: 2.4rem; height: 2.6rem;
+    flex-shrink: 0;
+  }
+  /* mobile submenu: collapsed by default, expanded by JS toggle */
   .submenu {
     position: static;
-    opacity: 1; visibility: visible;
+    width: 100%;
+    opacity: 0; visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
     transform: none;
     box-shadow: none;
     border: none;
@@ -1406,7 +1463,13 @@ li + li { margin-top: .35rem; }
     border-radius: 0;
     background: transparent;
     padding: 0 0 0 1rem;
-    margin-top: .25rem;
+    transition: max-height .28s ease, opacity .22s ease, visibility .22s ease;
+  }
+  .submenu.mobile-sub-open {
+    opacity: 1; visibility: visible;
+    max-height: 400px;
+    margin-top: .15rem;
+    margin-bottom: .35rem;
   }
   .submenu a { padding: .45rem .5rem; font-size: .92rem; }
   .cv-btn { margin: .5rem 0 0 0 !important; width: 100%; justify-content: center; }
@@ -1435,4 +1498,246 @@ li + li { margin-top: .35rem; }
   font: 600 clamp(.95rem,1.5vw,1.15rem)/1.45 var(--sans);
   max-width: 560px;
   letter-spacing: .01em;
+}
+
+/* ---- Typography refinement (Pass 4) ----------------------- */
+
+/* Numeric/data elements: mono with tabular figures */
+.stat-num {
+  font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.02em;
+}
+.ref-stat {
+  font-family: var(--mono);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Heading weight contrast — display h1 and section h2 */
+.page-hero h1  { font-weight: 800; letter-spacing: -.025em; }
+.pillar-hero h1 { font-weight: 700; letter-spacing: -.02em; }
+.project-hero h1 { font-weight: 700; letter-spacing: -.018em; }
+.contact-cta h2  { font-weight: 700; letter-spacing: -.015em; }
+.section-header h2 { font-weight: 700; letter-spacing: -.015em; }
+.content-section h2 { font-weight: 700; letter-spacing: -.012em; }
+
+/* More generous inter-section breathing room */
+.content-section { padding: clamp(3rem,5vw,5rem) 0; }
+.pillars-section  { padding: clamp(3.5rem,6.5vw,6rem) 0; }
+.evidence-section { padding: clamp(3.5rem,6.5vw,6rem) 0; }
+.personal-intro   { padding: clamp(3.5rem,6vw,5.5rem) 0; }
+.pull-quote-section { padding: clamp(2.5rem,4vw,3.75rem) 0; }
+.projects-strip   { padding: clamp(3rem,5vw,4.5rem) 0; }
+.contact-cta      { padding: clamp(4rem,7vw,6.5rem) 0; }
+
+/* Tighter body copy max-width for long-form content sections */
+.content-section > p,
+.content-section > ul { max-width: 72ch; }
+
+/* Slightly increased lead line-height for editorial feel */
+.lead { line-height: 1.68; }
+
+/* ---- Interactive polish (Pass 5) -------------------------- */
+/*
+  Shared easing: cubic-bezier(0.4,0,0.2,1) — Material-style ease-in-out.
+  Applied as overrides; existing transition declarations are superseded by
+  these more-specific or later rules where selectors match.
+*/
+
+/* 1. Shared easing custom property for reuse */
+:root {
+  --ease-ui: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-card: transform 0.25s var(--ease-ui),
+                     box-shadow 0.25s var(--ease-ui),
+                     border-color 0.25s var(--ease-ui),
+                     background 0.25s var(--ease-ui);
+}
+
+/* 2. Pillar cards — refined motion + GPU hint */
+.pillar-card {
+  transition: var(--transition-card);
+  will-change: transform, box-shadow;
+}
+.pillar-card:hover,
+.pillar-card:focus-within {
+  transform: translateY(-3px);
+}
+.pillar-card:focus-visible {
+  outline: 2px solid var(--color-copper);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(184,114,42,.18), var(--shadow-hover);
+}
+
+/* Replace abrupt display-none toggle with smooth fade-in */
+.pillar-card .card-hover-content {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.28s var(--ease-ui), opacity 0.22s var(--ease-ui);
+}
+.pillar-card:hover .card-hover-content,
+.pillar-card:focus-within .card-hover-content {
+  max-height: 300px;
+  opacity: 1;
+}
+
+/* 3. Quad (2x2 pillars grid) — add lift + focus */
+.quad {
+  transition: background 0.25s var(--ease-ui), transform 0.25s var(--ease-ui), box-shadow 0.25s var(--ease-ui);
+  will-change: transform;
+}
+.quad:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(61,45,27,.09);
+}
+.quad:focus-visible {
+  outline: 2px solid var(--color-copper);
+  outline-offset: 2px;
+}
+
+/* 4. Evidence cards — consistent easing + focus + lift */
+.evidence-card {
+  transition: var(--transition-card);
+  will-change: transform, box-shadow;
+}
+.evidence-card:hover {
+  transform: translateY(-3px);
+}
+.evidence-card:focus-visible {
+  outline: 2px solid var(--color-copper);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(184,114,42,.18), var(--shadow-hover);
+}
+.evidence-card .expand-detail {
+  transition: max-height 0.35s var(--ease-ui), opacity 0.28s var(--ease-ui);
+  opacity: 0;
+}
+.evidence-card:hover .expand-detail {
+  max-height: 200px;
+  opacity: 1;
+}
+
+/* 5. Exp cards — add lift, uniform easing, smooth detail expansion */
+.exp-card {
+  transition: border-color 0.25s var(--ease-ui),
+              box-shadow 0.25s var(--ease-ui),
+              transform 0.25s var(--ease-ui);
+  will-change: transform, box-shadow;
+}
+.exp-card:hover {
+  transform: translateY(-2px);
+}
+.exp-card:focus-within {
+  border-left-color: var(--color-copper);
+  box-shadow: var(--shadow-hover);
+}
+.exp-card:focus-visible {
+  outline: 2px solid var(--color-copper);
+  outline-offset: 3px;
+}
+.exp-detail {
+  transition: max-height 0.42s var(--ease-ui), opacity 0.32s var(--ease-ui);
+  opacity: 0;
+}
+.exp-card[data-expanded="true"] .exp-detail {
+  opacity: 1;
+}
+
+/* 6. Skill cards — uniform easing, smooth expansion, focus */
+.skill-card {
+  transition: var(--transition-card);
+  will-change: transform, box-shadow;
+}
+.skill-card:focus-visible {
+  outline: 2px solid var(--color-copper);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(184,114,42,.18), var(--shadow-hover);
+}
+.skill-detail {
+  transition: max-height 0.35s var(--ease-ui), opacity 0.28s var(--ease-ui);
+  opacity: 0;
+}
+.skill-card[data-expanded="true"] .skill-detail {
+  opacity: 1;
+}
+
+/* 7. Generic cards — uniform easing */
+.card,
+.role,
+.soft-panel,
+.visual-card,
+.project-card,
+.dynamic-card,
+.interactive-card {
+  transition: var(--transition-card);
+  will-change: transform, box-shadow;
+}
+.card:focus-visible,
+.role:focus-visible,
+.soft-panel:focus-visible,
+.visual-card:focus-visible,
+.project-card:focus-visible,
+.dynamic-card:focus-visible,
+.interactive-card:focus-visible {
+  outline: 2px solid var(--color-copper);
+  outline-offset: 3px;
+}
+.card:hover,
+.role:hover,
+.soft-panel:hover,
+.visual-card:hover,
+.project-card:hover,
+.dynamic-card:hover,
+.interactive-card:hover {
+  transform: translateY(-3px);
+}
+
+/* 8. Buttons — uniform easing */
+.btn {
+  transition: transform 0.25s var(--ease-ui),
+              box-shadow 0.25s var(--ease-ui),
+              border-color 0.25s var(--ease-ui),
+              background 0.25s var(--ease-ui),
+              color 0.25s var(--ease-ui);
+  will-change: transform;
+}
+.btn:focus-visible {
+  outline: 2px solid var(--color-copper);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(184,114,42,.22);
+}
+
+/* 9. Project chips */
+.project-chip {
+  transition: var(--transition-card);
+  will-change: transform;
+}
+.project-chip:focus-visible {
+  outline: 2px solid var(--color-copper);
+  outline-offset: 2px;
+}
+
+/* 10. Reduced-motion override — kill will-change hints too */
+@media (prefers-reduced-motion: reduce) {
+  .pillar-card,
+  .quad,
+  .evidence-card,
+  .exp-card,
+  .skill-card,
+  .card, .role, .soft-panel, .visual-card,
+  .project-card, .dynamic-card, .interactive-card,
+  .btn,
+  .project-chip {
+    will-change: auto;
+    transition-duration: 0.01ms !important;
+    transform: none !important;
+  }
+  .pillar-card .card-hover-content,
+  .evidence-card .expand-detail,
+  .exp-detail,
+  .skill-detail {
+    transition-duration: 0.01ms !important;
+  }
 }
